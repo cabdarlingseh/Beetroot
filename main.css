@@ -1,0 +1,53 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/image/welcome_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+}
+
+h2 {
+    text-align: center;
+    color: #dc090c;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #3498db;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+
+body>div {
+    text-align: center;
+}
