@@ -65,7 +65,7 @@ h2{
 }
 
 .contact-info a{
-    color: #3498db;
+    color: rgb(80, 253, 0);
     text-decoration: none;
 }
 
@@ -76,6 +76,10 @@ h2{
 
 .skills ul, .experience ul{
     width: 48%;
+}
+
+.previous_positions{
+    font-weight: bold;
 }
 
 summary{
