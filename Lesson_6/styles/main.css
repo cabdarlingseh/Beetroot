@@ -1,0 +1,12 @@
+.box, .text{
+    background-color: salmon;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+}
