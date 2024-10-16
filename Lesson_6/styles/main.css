@@ -1,8 +1,9 @@
 body{
     box-sizing: border-box;
     color: #fff;
-    
-  
+    font-family: "Noto Sans", sans-serif;
+    cursor:pointer
+    height:100vh
 }
 
 .container{
@@ -15,9 +16,27 @@ body{
 }
 
 img {
-    width: 30px;
     margin-left: 10px;
 }
+
+ul {
+    padding: 0;
+    font-size: 0;
+    border: 3px solid white;
+}
+
+.blocks li {
+    display: inline-block;
+    padding: 25px 0;
+    border: 2px solid #fff;
+}
+
+li {
+    height: 150px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
 
 div p {
     display: flex;
@@ -26,45 +45,16 @@ div p {
 }
 
 i{
-    font-size: 25px;
     margin-left: 10px;
-    
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    font-size: 0;
-    border: 3px solid white;
-    background-color: white;
-    
-}
-
-li {
-    display: inline-block;
-    height: 150px;
-    font-size: 20px;
-    box-sizing: border-box;
-    border: 3px solid white;
-    background-color: #3399CC;
-    vertical-align: middle;
-}
-
-.blocks{
-    width: 100%;
-}
-
-.blocks li{
-    display: inline-block;
-    padding: 25px 0;
-    border: 2px solid #fff;
-    text-align: center;
-    font-size: 22 px;
-}
-
-.blocks div{
-    padding-top: 10px;
+ul:hover li {
     opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+}
+
+ul:hover li:hover {
+    opacity: 1;
 }
 
 .blocks li:hover div{
@@ -87,32 +77,46 @@ li {
     width: 100%;
 }
 
-
-
-
-li div {
-    height: 150px;
-    vertical-align: middle;
-    text-align: center;
+#lisbon{
+    background-color: #3399cc;
 }
 
-li p:last-child {
-    opacity: 0.7;
+#paris{
+    background-color: #33cccc;
 }
 
-i {
-    font-size: 30px;
+#belgrade{
+    background-color: #996699;
 }
 
-ul:hover li {
-    opacity: 0.7;
-    transition: all 0.3s ease-in-out;
+#venice{
+    background-color: #c24747;
 }
 
-ul:hover li:hover {
-    opacity: 1;
+#telaviv{
+    background-color: #e2674a;
 }
 
+#cairo{
+    background-color: #ffcc66;
+}
 
+#newyork{
+    background-color: #99cc99;
+}
 
+#newdelhi{
+    background-color: #669999;
+}
 
+#sanfran{
+    background-color: #cc6699;
+}
+
+#tokyo{
+    background-color: #339966;
+}
+
+#sydney{
+    background-color:#666699;
+}
