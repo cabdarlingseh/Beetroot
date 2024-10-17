@@ -1,42 +1,47 @@
-body{
+body {
     box-sizing: border-box;
     color: #fff;
     font-family: "Noto Sans", sans-serif;
-    cursor:pointer
-    height:100vh
+    margin: 0;
+    padding: 0;
 }
 
-.container{
+.container {
     background-color: #3399cc;
     border: 25px solid #2b81ac;
-    max-width: 985px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 80px;
-    
+    padding: 20px;
 }
 
 img {
     margin-left: 10px;
+    max-width: 30px;
+    height: auto;
 }
 
 ul {
     padding: 0;
     font-size: 0;
     border: 3px solid white;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .blocks li {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 25px 0;
     border: 2px solid #fff;
+    text-align: center;
 }
 
 li {
     height: 150px;
-    font-size: 20px;
+    font-size: 16px;
     box-sizing: border-box;
 }
-
 
 div p {
     display: flex;
@@ -44,8 +49,9 @@ div p {
     justify-content: center;
 }
 
-i{
+i {
     margin-left: 10px;
+    font-size: 24px;
 }
 
 ul:hover li {
@@ -57,66 +63,116 @@ ul:hover li:hover {
     opacity: 1;
 }
 
-.blocks li:hover div{
+.blocks li:hover div {
     opacity: 1;
 }
 
-.blocks i {
-    font-size: 30px;
-}
-
-.block50{
+.block50 {
     width: 50%;
 }
 
-.block25{
+.block25 {
     width: 25%;
 }
 
-.block100{
+.block100 {
     width: 100%;
 }
 
-#lisbon{
+/* City background colors */
+#lisbon {
     background-color: #3399cc;
 }
 
-#paris{
+#paris {
     background-color: #33cccc;
 }
 
-#belgrade{
+#belgrade {
     background-color: #996699;
 }
 
-#venice{
+#venice {
     background-color: #c24747;
 }
 
-#telaviv{
+#telaviv {
     background-color: #e2674a;
 }
 
-#cairo{
+#cairo {
     background-color: #ffcc66;
 }
 
-#newyork{
+#newyork {
     background-color: #99cc99;
 }
 
-#newdelhi{
+#newdelhi {
     background-color: #669999;
 }
 
-#sanfran{
+#sanfran {
     background-color: #cc6699;
 }
 
-#tokyo{
+#tokyo {
     background-color: #339966;
 }
 
-#sydney{
-    background-color:#666699;
+#sydney {
+    background-color: #666699;
+}
+
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1200px) {
+    .container {
+        border-width: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .block25 {
+        width: 50%;
+    }
+
+    li {
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+        border-width: 10px;
+    }
+
+    .block50,
+    .block25 {
+        width: 100%;
+    }
+
+    li {
+        height: 100px;
+    }
+
+    i {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        border-width: 5px;
+    }
+
+    li {
+        height: 80px;
+        font-size: 14px;
+    }
+
+    i {
+        font-size: 18px;
+    }
 }
