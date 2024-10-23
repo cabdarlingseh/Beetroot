@@ -1,7 +1,8 @@
+/* Global Styles */
+
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-style: normal;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,6 +14,8 @@ body {
     width: 90%;
     margin: 0 auto;
 }
+
+/* Header Styles */
 
 .header {
     padding: 35px 0 17px;
@@ -33,6 +36,7 @@ body {
     width: 175px;
 }
 
+/* Navigation Styles */
 
 ul {
     list-style: none;
@@ -45,14 +49,13 @@ ul {
     margin-right: 35px;
 }
 
+.menu li:last-child {
+    margin-right: 60px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
-    display: inline-block;
-}
-
-.menu li:last-child{
-    margin-right: 60px;
 }
 
 .nav{
@@ -65,6 +68,8 @@ li a:hover {
     text-decoration: underline;
 }
 
+/* Button Styles */
+
 button {
     width: 100px;
     height: 45px;
@@ -72,7 +77,6 @@ button {
     border: 3px grey;
     border-radius: 3px;
     padding: 12px 20px;
-    text-align: center;
 }
 
 button:hover {
@@ -89,14 +93,12 @@ button:hover {
 
 .hero{
     padding-top: 40px;
-    font-size: 0;
 }
 
 .main_title{
     font-size: 44px;
     line-height: 55px;
     font-weight: bold;
-    color: #000;
 }
 
 .introduction:first-child{
@@ -112,11 +114,11 @@ button:hover {
     font-size: 18px;
     color:#544837;
     line-height: 28px;
-    width: 100%;
     max-width: 458px;
-    font-weight: 400;
     padding: 30px 0 30px 0;
 }
+
+/* Button Sizes */
 
 .started_button{
     width: 140px;
@@ -140,14 +142,13 @@ button:hover {
 
 .hero_image img {
     max-width: 800px;
-    height: 500px;
+    height: auto;
     margin-left: 650px;
     margin-top: -400px;
 }
 
 .feature {
     padding-top: 120px;
-    font-size: 0;
 }
 
 h2{
@@ -156,7 +157,6 @@ h2{
     text-align: center;
     width: 520px;
     padding-bottom: 60px;
-    font-weight: bold;
     line-height: 48px;
 }
 
@@ -179,7 +179,6 @@ h2{
 
 .pointer_icon{
     background-color: #7752be;
-    width: 750px;
 }
 
 .survey_icon{
@@ -300,7 +299,6 @@ main{
 .footer_nav .column{
     display: inline-block;
     width: 25%;
-    padding:0;
 }
 
 .email{
