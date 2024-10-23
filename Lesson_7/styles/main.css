@@ -323,7 +323,6 @@ main{
 .email_sign:active, .email_sign:focus, .email_sign::selection{
     outline: 1px solid #ff9900;
     background-color: #f5f5f5;
-    initial-value: none;
 }
 
 

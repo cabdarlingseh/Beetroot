@@ -1,3 +1,289 @@
 body {
-  background-color: red;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000;
+}
+
+.main_logo, .nav, .header_buttons, .hero, .introduction, .hero_image {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1126px;
+  width: 90%;
+  margin: 0 auto;
+}
+.container .header {
+  padding: 35px 0 17px;
+}
+.container .main_logo img {
+  width: 175px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 35px;
+}
+.menu:last-child {
+  margin-right: 60px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav {
+  width: 60%;
+  text-align: right;
+}
+
+li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+button {
+  width: 100px;
+  height: 45px;
+  font-weight: bold;
+  border: 3px grey;
+  border-radius: 3px;
+  padding: 12px 20px;
+}
+button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.action {
+  background-color: #ff9900;
+  color: #fff;
+}
+
+.hero {
+  padding-top: 40px;
+}
+
+.main_title {
+  font-size: 44px;
+  line-height: 55px;
+  font-weight: bold;
+}
+
+.introduction:first-child {
+  width: 45%;
+}
+.introduction:last-child {
+  width: 45%;
+  padding-left: 10px;
+}
+
+.title_details {
+  font-size: 18px;
+  color: #544837;
+  line-height: 28px;
+  max-width: 458px;
+  padding: 30px 0 30px 0;
+}
+
+.started_button {
+  width: 140px;
+}
+
+.watch_video_button {
+  width: 190px;
+  height: auto;
+  background-color: #fff;
+  text-decoration: underline;
+  color: #ff9900;
+}
+.watch_video_button > .triangle {
+  width: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.hero_image img {
+  max-width: 800px;
+  height: auto;
+  margin-left: 650px;
+  margin-top: -400px;
+}
+
+.feature {
+  padding-top: 120px;
+}
+
+h2 {
+  margin: 0 auto;
+  font-size: 36px;
+  text-align: center;
+  width: 520px;
+  padding-bottom: 60px;
+  line-height: 48px;
+}
+
+.column {
+  display: inline-block;
+  vertical-align: top;
+}
+.column.cards {
+  max-width: 270px;
+  width: 25%;
+}
+
+.icon {
+  max-height: 18px;
+  max-width: 18px;
+  padding: 16px;
+  border-radius: 20px;
+}
+.icon.pointer_icon {
+  background-color: #7752be;
+}
+.icon.survey_icon {
+  background-color: #fab005;
+}
+.icon.preference_icon {
+  background-color: #f03e3d;
+}
+.icon.hourglass_icon {
+  background-color: #4dadf7;
+}
+
+.details {
+  max-width: 200px;
+  padding-top: 28px;
+}
+
+.title_detail {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 12px;
+}
+
+.deets {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.mid_sign_up > button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
+  text-align: center;
+  padding: 15px;
+}
+.mid_sign_up > button:hover {
+  text-decoration: underline;
+}
+
+.professional {
+  margin-top: 120px;
+}
+.professional .pros {
+  max-width: 520px;
+  width: 100%;
+}
+
+.section_title {
+  font-size: 36px;
+  font-weight: bold;
+  width: 520px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+}
+
+.point {
+  max-width: 480px;
+  padding-top: 28px;
+}
+.point .point_title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.pros {
+  display: inline-block;
+  margin-left: 650px;
+  margin-bottom: -585px;
+}
+
+p.deets {
+  max-width: 450px;
+}
+
+.managers {
+  margin-left: 65px;
+}
+
+.checklist {
+  display: flex;
+  gap: 20px;
+}
+
+.check {
+  height: 12px;
+  width: 16px;
+  padding: 12px 10px;
+  border-radius: 15px;
+  background-color: #ff9900;
+}
+
+main {
+  border-bottom: 1px solid rgba(188, 208, 229, 0.5);
+  padding-bottom: 120px;
+}
+
+.footer {
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.footer_nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.footer_nav .column {
+  display: inline-block;
+  width: 25%;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.email_sign {
+  height: 35px;
+  width: 100%;
+  border: 1px solid #bcd0ef;
+  border-radius: 4px;
+}
+.email_sign:hover {
+  border: 3px solid #ff9900;
+}
+.email_sign:active, .email_sign:focus, .email_sign::selection {
+  outline: 1px solid #ff9900;
+  background-color: #f5f5f5;
 }
