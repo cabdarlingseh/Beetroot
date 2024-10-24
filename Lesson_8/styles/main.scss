@@ -1,5 +1,14 @@
 // Global styles 
 
+$button-color:#ff9900;
+$decoration:$decoration;
+
+%display-middle{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
 body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -7,11 +16,12 @@ body{
     padding: 0;
     box-sizing: border-box;
     color: #000;
+    background: rgb(58,177,180);
+    background: linear-gradient(90deg, rgba(58,177,180,1) 0%, rgba(231,217,217,1) 84%, rgba(252,176,69,1) 100%);
 }
 
 .main_logo,.nav,.header_buttons,.hero,.introduction,.hero_image{
-    display:inline-block;
-    vertical-align: middle;
+    @extend %display-middle
 }
 
 .container{
@@ -38,8 +48,7 @@ ul{
 
 .menu{
     li{
-        display: inline-block;
-        vertical-align: middle;
+        @extend %display-middle;
         margin-right: 35px;
     }
 
@@ -61,7 +70,7 @@ a{
 li{
     a:hover{
         cursor: pointer;
-        text-decoration: underline;
+        text-decoration: $decoration;
     }
 }
 
@@ -77,14 +86,14 @@ button {
     padding: 12px 20px;
 
     &:hover{
-        text-decoration: underline;
+        text-decoration: $decoration;
         cursor: pointer;
-        text-transform: uppercase;
+        text-transform:uppercase;
     }
 }
 
 .action{
-    background-color: #ff9900;
+    background-color: $button-color;
     color: #fff;
 }
 
@@ -130,14 +139,12 @@ button {
     width: 190px;
     height: auto;
     background-color: #fff;
-    text-decoration: underline;
-    color: #ff9900;
+    text-decoration: $decoration;
+    color: $button-color;
 
     >.triangle{
         width: 10px;
         margin-right: 10px;
-        display: inline-block;
-        vertical-align: middle;
     }
 }
 
@@ -223,7 +230,7 @@ h2{
         padding: 15px;
 
         &:hover {
-            text-decoration: underline;
+            text-decoration: $decoration;
         }
     }
 }
@@ -280,11 +287,11 @@ p.deets{
     width: 16px;
     padding: 12px 10px;
     border-radius: 15px;
-    background-color: #ff9900;
+    background-color: $button-color;
 }
 
 main{
-    border-bottom:1px solid rgba(188,208,229,0.5);
+    border-bottom:1px solid rgb(21 24 23 / 50%);
     padding-bottom: 120px;
 }
 
@@ -320,7 +327,7 @@ main{
     border-radius: 4px;
 
     &:hover {
-        border: 3px solid #ff9900;
+        border: 2px solid $button-color;
     }
 
     &:active,

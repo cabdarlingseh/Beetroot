@@ -1,3 +1,8 @@
+.menu li, .main_logo, .nav, .header_buttons, .hero, .introduction, .hero_image {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -5,11 +10,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: #000;
-}
-
-.main_logo, .nav, .header_buttons, .hero, .introduction, .hero_image {
-  display: inline-block;
-  vertical-align: middle;
+  background: #3ab1b4;
+  background: linear-gradient(90deg, #3ab1b4 0%, #e7d9d9 84%, #fcb045 100%);
 }
 
 .container {
@@ -30,8 +32,6 @@ ul {
 }
 
 .menu li {
-  display: inline-block;
-  vertical-align: middle;
   margin-right: 35px;
 }
 .menu:last-child {
@@ -112,8 +112,6 @@ button:hover {
 .watch_video_button > .triangle {
   width: 10px;
   margin-right: 10px;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .hero_image img {
@@ -281,7 +279,7 @@ main {
   border-radius: 4px;
 }
 .email_sign:hover {
-  border: 3px solid #ff9900;
+  border: 2px solid #ff9900;
 }
 .email_sign:active, .email_sign:focus, .email_sign::selection {
   outline: 1px solid #ff9900;
