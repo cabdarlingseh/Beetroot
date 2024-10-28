@@ -114,7 +114,7 @@ button{
     font-size: 0;
 }
 
-.main_title{
+.hero__title{
     font-size: 44px;
     line-height: 55px;
     font-weight: bold;
@@ -134,7 +134,7 @@ button{
     padding-left: 10%;
 }
 
-.title_details{
+.hero__details{
     color:#544837;
     font-size: 18px;
     line-height: 28px;
@@ -150,21 +150,21 @@ button{
     width: 100%;
 }
 
-.watch_video_button{
+.hero__video__button{
   color:#ff9900;
   width: 180px;
   font-size: 12px;
   padding: 9px 20px;  
 }
 
-.triangle{
+.hero__triangle{
    max-width: 18px;
    margin-right: 8px;
    display: inline-block;
    vertical-align: middle; 
 }
 
-.watch_text{
+.hero__watch__text{
    display: inline-block;
    vertical-align: middle;
    text-decoration: underline;
@@ -228,7 +228,7 @@ h2{
     padding-top: 28px;
 }
 
-.title_detail{
+.title__detail{
     font-size: 22px;
     font-weight: bold;
     margin: 0;
