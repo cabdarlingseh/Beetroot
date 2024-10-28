@@ -11,42 +11,43 @@
     <link rel="stylesheet" href="styles/main.css" />
 </head>
 
-<body class="container">
+<body>
     <header class="header">
-        <div class="main_logo">
-            <a href="#"><img src="images/productly-logo.svg" alt="Productly logo"></a>
-        </div>
+        <div class="container header__container">
+            <a href="#" class="header__logo"><img src="images/productly-logo.svg" alt="Productly logo"></a>
 
-        <nav class="nav">
-            <ul class="menu">
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Customers</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Resources</a></li>
-            </ul>
-        </nav>
-        <div class="header_buttons">
-            <button>Sign In</button>
-            <button class="action">Sign Up</button>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Customer</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+            </nav>
+            <div class="header__buttons">
+                <button class="button">Sign In</button>
+                <button class="button action">Sign Up</button>
+            </div>
         </div>
     </header>
-    <main>
+    <main class="container">
         <section class="hero">
-            <div class="introduction">
+            <div class="column">
                 <h1 class="main_title">The Design Thinking superpowers</h1>
                 <p class="title_details">Tools, tutorials, design and innovation experts, all in one place! The most
                     intuitive way to
                     imagine your next user
                     experience.</p>
-                <div>
-                    <button class="action started_button"><a href="#">Get started</a></button>
-                    <button class="watch_video_button"><img src="images/triangle_icon.svg" alt="Triangle icon"
-                            class="triangle">Watch the video</button>
-                </div>
-                <div class="hero_image">
-                    <img src="images/hero.svg" alt="Three people jumping">
-                </div>
+                <div class="main_title_actions">
+                    <button class="action started_button button"><a href="#">Get started</a></button>
 
+
+                    <button class="watch_video_button"><img src="images/triangle_icon.svg" alt="Triangle icon"
+                            class="triangle"><span class="watch_text">Watch Video</span></button>
+                </div>
+            </div>
+            <div class="column">
+                <img src="images/hero.svg" alt="Three people jumping" class="image">
             </div>
         </section>
         <section class="feature">
@@ -90,14 +91,11 @@
                 </div>
             </div>
             <div class="mid_sign_up">
-                <button class="action started_button">SIGN UP NOW</button>
+                <button class="button action started_button">SIGN UP NOW</button>
             </div>
         </section>
         <section class="professional">
             <div class="column">
-                <div class="column">
-                    <img src="images/professional-image-guy.svg" alt="A guy with red shirt" class="pros">
-                </div>
                 <p class="deets">Effortless Validation for</p>
                 <h3 class="section_title">Design Professionals</h3>
                 <p class="deets">The Myspace page defines the individual, his or her characteristics, traits, personal
@@ -131,11 +129,14 @@
                     </div>
                 </div>
             </div>
+            <div class="column">
+                <img src="images/professional-image-guy.svg" alt="A guy with red shirt" class="image">
+            </div>
         </section>
 
         <section class="professional">
             <div class="column">
-                <img src="images/product-manager-image.svg" alt="Guy with blue shirt">
+                <img src="images/product-manager-image.svg" alt="Guy with blue shirt" class="image">
             </div>
             <div class="column managers">
                 <p class="deets">
@@ -174,13 +175,11 @@
 
         <section class="professional">
             <div class="column">
-                <div class="column">
-                    <img src="images/marketers-image.svg" alt="A guy with red shirt" class="pros">
-                </div>
                 <p class="deets">Optimisation for</p>
                 <h3 class="section_title">Marketers</h3>
-                <p class="deets">Few would argue that, despite the advancements of feminism over the past three decades, women still face a double
-                standard when it comes to their behavior.</p>
+                <p class="deets">Few would argue that, despite the advancements of feminism over the past three decades,
+                    women still face a double
+                    standard when it comes to their behavior.</p>
                 <div>
                     <div class="point">
                         <div class="point_title">
@@ -209,7 +208,10 @@
                     </div>
                 </div>
             </div>
-        </section>  
+            <div class="column">
+                <img src="images/marketers-image.svg" alt="A guy with red shirt" class="image">
+            </div>
+        </section>
     </main>
 
     <footer class="container footer">
@@ -232,7 +234,7 @@
             <div class="column">
                 <div class="email">
                     <input type="text" name="user_email" class="email_sign" placeholder="Email address">
-                    <button class="action started_button">Sign Up Now</button>
+                    <button class="button action started_button">Sign Up Now</button>
                 </div>
             </div>
         </div>
