@@ -1,4 +1,4 @@
-.watch_text, .triangle, .header__logo, .header__nav, .header__buttons {
+.hero__watch-text, .triangle, .header__logo, .header__nav, .header__buttons {
   display: inline-block;
   vertical-align: middle;
 }
@@ -105,25 +105,25 @@ button {
   font-size: 0;
 }
 
-.main_title {
+.hero__title {
   font-size: 44px;
   line-height: 55px;
   font-weight: bold;
 }
 
-.column {
+.column, .professional__column, .footer__signup {
   display: inline-block;
   vertical-align: top;
 }
-.column:first-child {
+.column:first-child, .professional__column:first-child, .footer__signup:first-child {
   width: 45%;
 }
-.column:last-child {
+.column:last-child, .professional__column:last-child, .footer__signup:last-child {
   width: 45%;
   padding-left: 10%;
 }
 
-.title_details {
+.hero__description {
   color: #544837;
   font-size: 18px;
   line-height: 28px;
@@ -131,12 +131,6 @@ button {
   max-width: 458px;
   font-weight: 400;
   padding: 30px 0 30px 0;
-}
-
-.image {
-  max-width: 800px;
-  display: inline-block;
-  width: 100%;
 }
 
 .watch_video_button {
@@ -151,20 +145,21 @@ button {
   margin-right: 8px;
 }
 
-.watch_text {
+.hero__watch-text {
   text-decoration: underline;
   font-size: 16px;
   line-height: 18px;
 }
 
+.image {
+  max-width: 800px;
+  display: inline-block;
+  width: 100%;
+}
+
 .feature, .professional {
   padding-top: 120px;
   font-size: 0;
-}
-
-h3, p {
-  margin: 0;
-  padding: 0;
 }
 
 h2 {
@@ -177,50 +172,57 @@ h2 {
   padding-bottom: 60px;
 }
 
-.column.cards {
-  max-width: 270px;
-  width: 25%;
+h3, p {
+  margin: 0;
+  padding: 0;
 }
 
-.icon {
+.feature__card.feature__card--container {
+  max-width: 270px;
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.feature__icon {
   max-height: 18px;
   max-width: 18px;
   padding: 16px;
   border-radius: 19px;
 }
 
-.icon.pointer_icon {
+.feature__icon--pointer {
   background-color: #7752be;
 }
-.icon.survey_icon {
+.feature__icon--survey {
   background-color: #fab005;
 }
-.icon.preference_icon {
+.feature__icon--preference {
   background-color: #f03e3d;
 }
-.icon.hourglass_icon {
+.feature__icon--hourglass {
   background-color: #4dadf7;
 }
 
-.details {
+.feature__details {
   max-width: 200px;
   padding-top: 28px;
 }
 
-.title_detail {
+.feature__detail-title {
   font-size: 22px;
   font-weight: bold;
   margin: 0;
   padding-bottom: 12px;
 }
 
-.deets {
+.feature__description, .professional__text, .professional__description, .professional__point-description {
   font-size: 16px;
   font-weight: 400;
   margin: 0;
 }
 
-.mid_sign_up {
+.feature__sign-up {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,22 +237,29 @@ h2 {
   width: 100%;
 }
 
-.point {
+.professional__title {
+  font-size: 36px;
+  font-weight: bold;
+  width: 520px;
+  padding-bottom: 30px;
+}
+
+.professional__point {
   max-width: 480px;
   padding-top: 28px;
 }
-.point .point_title {
+.professional__point .professional__point-title {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 8px;
 }
 
-.checklist {
+.professional__list-item--checklist {
   display: flex;
   gap: 20px;
 }
 
-.check {
+.professional__check-icon {
   height: 12px;
   width: 16px;
   padding: 11px 9px;
@@ -268,18 +277,18 @@ main {
   padding-bottom: 80px;
 }
 
-.footer_nav {
+.footer__navigation {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
-.footer_nav .column {
+.footer__navigation .footer__list {
   display: inline-block;
   width: 25%;
   padding: 0;
 }
 
-.email {
+.footer__email {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -287,20 +296,20 @@ main {
   gap: 10px;
 }
 
-.email_sign {
+.footer__input {
   height: 35px;
   width: 100%;
   border: 1px solid #bcd0ef;
   border-radius: 4px;
 }
-.email_sign:hover {
+.footer__input:hover {
   border: 1px solid #ff9900;
 }
-.email_sign:active, .email_sign:focus, .email_sign::selection {
+.footer__input:active, .footer__input:focus, .footer__input::selection {
   outline: 1px solid #ff9900;
   background-color: #f5f5f5;
 }
 
-.nav_item:hover {
+.footer__link:hover {
   color: #ffa41b;
 }
