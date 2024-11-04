@@ -1,11 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 9</title>
+    <title>Productly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="https://kit.fontawesome.com/0bee8dce34.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="header__container container">
+            <a href="#" class="header__logo"><img src="../Lesson_7/../Lesson_7/images/productly-logo.svg"
+                    alt="Productly logo"></a>
+
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Customer</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+            </nav>
+            <div class="header__buttons">
+                <button class="button">Sign In</button>
+                <button class="button action">Sign Up</button>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section class="hero">
+            <div class="column">
+                <h1 class="hero__title">The Design Thinking superpowers</h1>
+                <p class="hero__description">
+                    Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine
+                    your next user
+                    experience.
+                </p>
+                <div class="hero__actions">
+                    <button class="action started_button button">
+                        <a href="#" class="hero__button-link">Get started</a>
+                    </button>
+                    <button class="watch_video_button">
+                        <!-- <img src="../Lesson_7/images/triangle_icon.svg" alt="Triangle icon" class="triangle"> -->
+                        <i class="fa-solid fa-play triangle"></i>
+                        <span class="hero__watch-text">Watch Video</span>
+                    </button>
+                </div>
+            </div>
+            <div class="column">
+                <img src="../Lesson_7/images/hero.svg" alt="Three people jumping" class="image">
+            </div>
+        </section>
+        <section class="feature">
+            <div class="feature__heading">
+                <h2>We design tools to unveil your superpowers</h2>
+            </div>
+
+            <div class="feature__card feature__card--container">
+                <!-- <img src="../Lesson_7/images/pointer-icon.svg" alt="Pointer Icon"
+                    class="feature__icon feature__icon--pointer"> -->
+                    <i class="fa-solid fa-arrow-pointer feature__icon feature__icon--pointer"></i>
+                <div class="feature__details">
+                    <h3 class="feature__detail-title">First click tests</h3>
+                    <p class="feature__description">While most people enjoy gambling</p>
+                </div>
+            </div>
+
+            <div class="feature__card feature__card--container">
+                <!-- <img src="../Lesson_7/images/survey-icon.svg" alt="Pointer Icon"
+                    class="feature__icon feature__icon--survey"> -->
+                    <i class="fa-brands fa-stumbleupon feature__icon feature__icon--survey"></i>
+                <div class="feature__details">
+                    <h3 class="feature__detail-title">Design surveys</h3>
+                    <p class="feature__description">Sports betting, lottery and bingo playing for the fun.</p>
+                </div>
+            </div>
+
+            <div class="feature__card feature__card--container">
+                <!-- <img src="../Lesson_7/images/preference-icon.svg" alt="Pointer Icon"
+                    class="feature__icon feature__icon--preference"> -->
+                    <i class="fa-solid fa-heart feature__icon feature__icon--preference"></i>
+                <div class="feature__details">
+                    <h3 class="feature__detail-title">Preference tests</h3>
+                    <p class="feature__description">The Myspace page defines the individual.</p>
+                </div>
+            </div>
+
+            <div class="feature__card feature__card--container">
+                <!-- <img src="../Lesson_7/images/time-icon.svg" alt="Pointer Icon"
+                    class="feature__icon feature__icon--hourglass"> -->
+                    <i class="fa-regular fa-hourglass-half feature__icon feature__icon--hourglass"></i>
+                <div class="feature__details">
+                    <h3 class="feature__detail-title">Five second tests</h3>
+                    <p class="feature__description">Personal choices and the overall personality of the person.</p>
+                </div>
+            </div>
+
+            <div class="feature__sign-up">
+                <button class="button action feature__button">SIGN UP NOW</button>
+            </div>
+
+        </section>
+
+        <section class="professional">
+            <div class="professional__column">
+                <p class="professional__text">Effortless Validation for</p>
+                <h3 class="professional__title">Design Professionals</h3>
+                <p class="professional__description">
+                    The Myspace page defines the individual, his or her characteristics, traits, personal choices and
+                    the overall
+                    personality of the person.
+                </p>
+
+                <div class="professional__points">
+                    <div class="professional__point">
+                        <div class="professional__point-title">
+                            Accessory makers
+                        </div>
+                        <div class="professional__point-description">
+                            While most people enjoy casino gambling, sports betting, lottery and bingo playing for the
+                            fun.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="professional__points">
+                    <div class="professional__point">
+                        <div class="professional__point-title">
+                            Alterationists
+                        </div>
+                        <div class="professional__point-description">
+                            If you are looking for a new way to promote your business that won’t cost you more money.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="professional__points">
+                    <div class="professional__point">
+                        <div class="professional__point-title">
+                            Custom Design designers
+                        </div>
+                        <div class="professional__point-description">
+                            If you are looking for a new way to promote your business that won’t cost you more money.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="professional__column">
+                <img src="../Lesson_7/images/professional-image-guy.svg" alt="A guy with red shirt" class="image">
+            </div>
+        </section>
+
+        <section class="professional">
+            <div class="professional__column">
+                <img src="../Lesson_7/images/product-manager-image.svg" alt="Guy with blue shirt" class="image">
+            </div>
+
+            <div class="professional__column">
+                <p class="professional__text">
+                    Easier decision making for
+                </p>
+
+                <h3 class="professional__title">Product managers</h3>
+                <p class="professional__text">The Myspace page defines the individual, his or her characteristics,
+                    traits, personal choices and
+                    the overall
+                    personality of the person.</p>
+
+                <div class="professional__list">
+                    <div class="professional__point professional__list-item--checklist">
+                        <!-- <img src="../Lesson_7/images/tick.svg" alt="Tick mark" class="professional__check-icon"> -->
+                        <i class="fa-solid fa-check professional__check-icon"></i>
+                        <div class="professional__text">Never worry about overpaying for your energy again</div>
+                    </div>
+                </div>
+
+                <div class="professional__list">
+                    <div class="professional__point professional__list-item--checklist">
+                        <!-- <img src="../Lesson_7/images/tick.svg" alt="Tick mark" class="professional__check-icon"> -->
+                        <i class="fa-solid fa-check professional__check-icon"></i>
+                        <div class="professional__text">We will only switch you to energy companies that we trust and
+                            will treat you right.</div>
+                    </div>
+                </div>
+
+                <div class="professional__list">
+                    <div class="professional__point professional__list-item--checklist">
+                        <!-- <img src="../Lesson_7/images/tick.svg" alt="Tick mark" class="professional__check-icon"> -->
+                        <i class="fa-solid fa-check professional__check-icon"></i>
+                        <div class="professional__text">We track the markets daily and know where the savings are.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="professional">
+            <div class="professional__column">
+                <p class="professional__text">Optimisation for</p>
+                <h3 class="professional__title">Marketers</h3>
+                <p class="professional__description">
+                    Few would argue that, despite the advancements of feminism over the past three decades, women still
+                    face a double
+                    standard when it comes to their behavior.
+                </p>
+
+                <div class="professional__points">
+                    <div class="professional__point">
+                        <div class="professional__point-title">
+                            Accessory makers
+                        </div>
+                        <div class="professional__point-description">
+                            While most people enjoy casino gambling, sports betting, lottery and bingo playing for the
+                            fun.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="professional__points">
+                    <div class="professional__point">
+                        <div class="professional__point-title">
+                            Alterationists
+                        </div>
+                        <div class="professional__point-description">
+                            If you are looking for a new way to promote your business that won’t cost you more money.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="professional__points">
+                    <div class="professional__point">
+                        <div class="professional__point-title">
+                            Custom Design designers
+                        </div>
+                        <div class="professional__point-description">
+                            If you are looking for a new way to promote your business that won’t cost you more money.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="professional__column">
+                <img src="../Lesson_7/images/marketers-image.svg" alt="A guy with red shirt" class="image">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <a href="#" class="logo_link"><img src="../Lesson_7/images/productly-logo.svg" alt="Productly logo"></a>
+
+        <div class="footer__navigation">
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">About Us</a></li>
+                <li><a href="#" class="footer__link">Blog</a></li>
+                <li><a href="#" class="footer__link">Contact</a></li>
+                <li><a href="#" class="footer__link">FAQ</a></li>
+            </ul>
+
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Disclaimer</a></li>
+                <li><a href="#" class="footer__link">Financing</a></li>
+                <li><a href="#" class="footer__link">Privacy Policy</a></li>
+                <li><a href="#" class="footer__link">Terms of Service</a></li>
+            </ul>
+
+            <div class="footer__list">
+                <div class="footer__email">
+                    <input type="text" name="user_email" class="footer__input" placeholder="Email address">
+                    <button class="button action footer__button">Sign Up Now</button>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
