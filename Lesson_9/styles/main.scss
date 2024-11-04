@@ -193,13 +193,13 @@ button {
     }
   }
 
-  i{
-    color: #fff;
-  };
-
   &__icon {
-    // max-height: 18px;
-    // max-width: 18px;
+    color: #fff;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center; 
     font-size: 18px;
     padding: 16px;
     border-radius: 19px;
@@ -268,6 +268,7 @@ button {
     padding: 11px;
     border-radius: 14px;
     background-color: $primary-color;
+    color:#fff;
   }
 }
 
