@@ -1,0 +1,89 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Griffy", system-ui;
+    background-image: url("/Lesson_11/images/birthday_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 4px;
+    background: rgb(224, 217, 126);
+    background: linear-gradient(90deg, rgba(224, 217, 126, 1) 0%, rgba(69, 252, 244, 1) 38%, rgba(74, 125, 233, 1) 73%, rgba(151, 11, 120, 1) 100%);
+}
+
+img {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+
+
+.colors {
+    font-size: 30px;
+    font-weight: bold;
+    animation: dance 1s infinite;
+}
+
+@keyframes dance {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.greeting {
+    font-size: 22px;
+    padding: 10px;
+    display: inline-block;
+    animation: colorChange 3s infinite;
+    color: #fff;
+    margin-top: -20px;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #05004e;
+    }
+
+    25% {
+        color: #ff0000;
+    }
+
+    50% {
+        color: #fb7777;
+    }
+
+    75% {
+        color: #ffcccc;
+    }
+
+    100% {
+        color: #05004e;
+    }
+}
+
+.emojis {
+    display: inline-block;
+    margin-top: -10px;
+    transition: transform 0.5s ease;
+
+    &:hover {
+        transform: rotate(360deg);
+    }
+}

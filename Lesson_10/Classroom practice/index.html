@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://kit.fontawesome.com/0bee8dce34.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container row header_container">
+            <div class="header_col row">
+                <a href="#" class="logo">
+                    <img src="./images/logo.svg" alt="apptweak">
+                </a>
+
+                <div class="search_wrapper">
+                    <div class="search_input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search for an app">
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_col row header_actions">
+                <button class="profile_dropdown">Simon's workspace <i class="fa-solid fa-chevron-down"></i></button>
+                <button class="notify_wrapper">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="counter">33</span>
+                </button>
+                <button class="profile">S</button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container row main_container">
+            <div class="sidebar"></div>
+            <div class="main_content"></div>
+        </div>
+    </main>
+</body>
+
+</html>

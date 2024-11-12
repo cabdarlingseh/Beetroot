@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.logo {
+  height: 32px;
+  margin-right: 60px;
+}
+
+.header {
+  padding: 15px 16px 15px 20px;
+  border-bottom: 1px solid #ebe9e4;
+}
+
+.header_container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search_input {
+  position: relative;
+}
+.search_input input {
+  padding: 6px 0 6px 32px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #93928d;
+  border: 1px solid #ebe9e4;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 265px;
+}
+.search_input i {
+  color: #6f6e69;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.header_actions {
+  column-gap: 24px;
+  align-items: center;
+}
+
+.profile {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: #3ebbb1;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.notify_wrapper {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  position: relative;
+}
+.notify_wrapper i {
+  color: #6f6e69;
+  font-size: 22px;
+}
+
+.counter {
+  position: absolute;
+  top: -5px;
+  right: -6px;
+  background-color: #c82f48;
+  padding: 2px 4px;
+  display: inline-block;
+  border-radius: 38px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+}
+
+.profile_dropdown {
+  color: #6f6e69;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  outline: none;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+.profile_dropdown:hover {
+  border-color: #ebe9e4;
+}
+.profile_dropdown i {
+  color: #262624;
+  font-size: 12px;
+  display: inline-block;
+  margin-left: 12px;
+  font-size: 12px;
+}
