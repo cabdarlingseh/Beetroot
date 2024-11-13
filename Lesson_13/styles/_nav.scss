@@ -1,0 +1,46 @@
+@import 'vars';
+
+header {
+    background: $base_bg;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        max-width: 130px;
+    }
+}
+
+
+.nav_list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+
+    li {
+        display: inline-flex;
+        vertical-align: middle;
+    }
+
+    .navlist_item {
+        font-size: 14px;
+        color: $text-color;
+        font-weight: bold;
+
+
+        &:hover {
+            color: $item_hover;
+            text-shadow: 0 4px 4px $shadow;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+header {
+  background: #f4f6f7;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation .logo {
+  max-width: 130px;
+}
+
+.nav_list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 50px;
+}
+.nav_list li {
+  display: inline-flex;
+  vertical-align: middle;
+}
+.nav_list .navlist_item {
+  font-size: 14px;
+  color: #13253A;
+  font-weight: bold;
+}
+.nav_list .navlist_item:hover {
+  color: #ff0000;
+  text-shadow: 0 4px 4px #000;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../Fonts/avenir/AvenirNext-Regular.ttf") format("truetype"), url("../Fonts/avenir/avenir/AvenirNext-Bold.ttf") format("truetype");
+}
+body {
+  font-family: Avenir Next, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
