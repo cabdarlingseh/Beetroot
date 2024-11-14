@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Avenir Next";
-  src: url("../Fonts/avenir/AvenirNext-Regular.ttf") format("truetype"), url("../Fonts/avenir/avenir/AvenirNext-Bold.ttf") format("truetype");
+  src: url("../Fonts/avenir/AvenirNext-Regular.ttf") format("truetype"), url("../Fonts/avenir/AvenirNext-Bold.ttf") format("truetype"), url("../Fonts/avenir/AvenirNext-demi-bold.ttf") format("truetype");
 }
 body {
   font-family: Avenir Next, Arial, Helvetica, sans-serif;
@@ -12,6 +12,22 @@ body {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
+}
+
+.small_container {
+  max-width: 775px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+h1,
+h2,
+p,
+i {
+  margin: 0;
+  padding: 0;
 }
 
 a {

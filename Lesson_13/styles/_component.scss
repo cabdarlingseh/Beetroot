@@ -1,0 +1,40 @@
+@import 'vars';
+
+.btn {
+    width: 336px;
+    height: 60px;
+    border: none;
+    background-color: $button_action;
+    color: $light;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0);
+
+    &:hover {
+        transform: translateX(10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        background-color: $btn_hover;
+    }
+}
+
+.heading {
+    color: $text-color;
+    font-weight: 700;
+}
+
+.description {
+    font-size: $texts_size;
+    font-weight: 400;
+    line-height: 27px;
+    padding-bottom: 20px;
+}
+
+.intro_text {
+    font-size: $texts_size;
+    color: $intro_highlights;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+}

@@ -1,0 +1,94 @@
+@import 'vars';
+
+.hero {
+    background-color: $base_bg;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.hero_contents {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+
+    .heading {
+        font-size: 46px;
+        padding-bottom: 10px;
+        letter-spacing: -1px;
+        font-weight: 700;
+    }
+}
+
+.column {
+    flex: 1;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+}
+
+.banner {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .heading {
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+
+    .description {
+        text-align: center;
+    }
+}
+
+.banner .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.banner_title {
+    color: $text-color;
+    font-size: 38px;
+    letter-spacing: -0.5px;
+    padding-bottom: 30px;
+}
+
+.banner_icon {
+    padding-bottom: 20px;
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+}
+
+.metrics {
+    background-color: $base_bg;
+
+    .small_container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cards {
+        gap: 125px;
+    }
+}
+
+.indexes {
+    display: flex;
+
+    .heading {
+        color: $text-color;
+        font-size: 46px;
+    }
+}
+
+.icon {
+    color: $button_action;
+    font-size: 46px;
+}
