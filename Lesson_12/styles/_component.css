@@ -17,6 +17,27 @@
   background-color: #d9623d;
 }
 
+.get_started_button {
+  background-color: #2557ab;
+  box-shadow: 0 14px 18px rgba(0, 0, 0, 0.2);
+}
+.get_started_button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #2557ab;
+  color: #ff0000;
+}
+
+.submit_button {
+  width: 370px;
+  height: 60px;
+  padding: 20px 100px;
+  margin-top: 36px;
+}
+.submit_button:hover {
+  transform: scale(1.1);
+}
+
 .heading {
   color: #13253A;
   font-weight: 700;
@@ -43,4 +64,59 @@
   font-weight: 400;
   line-height: 30px;
   padding-bottom: 20px;
+}
+
+input {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  width: 370px;
+  height: 28px;
+  flex-shrink: 0;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: #fff;
+}
+input:hover {
+  border-bottom: 1px solid #fff;
+}
+input:focus {
+  border-bottom: 1px solid #FF7F57;
+}
+
+.input_field {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.input_field::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+  opacity: 1;
+}
+
+textarea {
+  outline: none;
+  border: none;
+  resize: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  width: 370px;
+  height: 80px;
+  margin-top: 10px;
+  font-family: "Avenir Next";
+  color: #fff;
+}
+textarea:hover {
+  border-bottom: 1px solid #FF7F57;
+}
+textarea:hover::placeholder {
+  color: #fff;
 }

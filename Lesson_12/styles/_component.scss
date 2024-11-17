@@ -4,7 +4,7 @@
     width: 336px;
     height: 60px;
     border: none;
-    background-color: $button_action;
+    background-color: $action;
     color: $light;
     text-transform: capitalize;
     text-align: center;
@@ -16,7 +16,30 @@
     &:hover {
         transform: translateX(10px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        background-color: $btn_hover;
+        background-color: $primary_btn_hover;
+    }
+}
+
+.get_started_button {
+    background-color: $begin;
+    box-shadow: 0 14px 18px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        background-color: $begin;
+        color: $item_hover;
+    }
+}
+
+.submit_button {
+    width: 370px;
+    height: 60px;
+    padding: 20px 100px;
+    margin-top: 36px;
+
+    &:hover {
+        transform: scale(1.1);
     }
 }
 
@@ -26,14 +49,14 @@
 }
 
 .description {
-    font-size: $texts_size;
+    font-size: 16px;
     font-weight: 400;
     line-height: 27px;
     padding-bottom: 20px;
 }
 
 .intro_text {
-    font-size: $texts_size;
+    font-size: 16px;
     color: $intro_highlights;
     padding-bottom: 5px;
     text-transform: capitalize;
@@ -46,4 +69,64 @@
     font-weight: 400;
     line-height: 30px;
     padding-bottom: 20px;
+}
+
+input {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    width: 370px;
+    height: 28px;
+    flex-shrink: 0;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: $light;
+
+    &:hover {
+        border-bottom: 1px solid $light;
+    }
+
+    &:focus {
+        border-bottom: 1px solid $action;
+    }
+}
+
+.input_field {
+    color: $light;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.25);
+        opacity: 1;
+    }
+}
+
+textarea {
+    outline: none;
+    border: none;
+    resize: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    width: 370px;
+    height: 80px;
+    margin-top: 10px;
+    font-family: 'Avenir Next';
+    color: $light;
+
+    &:hover {
+        border-bottom: 1px solid $action;
+    }
+
+    &:hover::placeholder {
+        color: $light;
+    }
 }
