@@ -9,7 +9,7 @@
   font-size: 17px;
   cursor: pointer;
   transition: all 0.5s ease-in;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .btn:hover {
   transform: translateX(10px);
@@ -115,7 +115,7 @@ textarea {
   color: #fff;
 }
 textarea:hover {
-  border-bottom: 1px solid #FF7F57;
+  border-bottom: 1px solid #fff;
 }
 textarea:hover::placeholder {
   color: #fff;
