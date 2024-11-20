@@ -1,0 +1,167 @@
+body {
+  font-family: "Mulish", serif;
+  color: #111111;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h2,
+h3,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding-top: 60px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  max-width: 90px;
+}
+
+.nav_list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+.nav_list li {
+  display: inline-flex;
+  vertical-align: middle;
+}
+.nav_list .navlist_item {
+  font-size: 18px;
+  font-weight: bold;
+  color: #111111;
+  letter-spacing: -0.35px;
+}
+
+.hero {
+  padding-top: 92px;
+  padding-bottom: 130px;
+  display: flex;
+  justify-content: space-between;
+  gap: 180px;
+}
+
+.hero_text {
+  color: #4a4ff2;
+  font-weight: bold;
+  letter-spacing: -0.42px;
+  font-size: 22px;
+}
+
+.intro {
+  padding-top: 32px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+}
+.intro .highlight {
+  color: #4a4ff2;
+}
+
+.thought {
+  padding: 0 50px 10px 15px;
+  align-self: end;
+  white-space: nowrap;
+}
+.thought .thought_border {
+  width: 30px;
+  border-top: 2px solid #979797;
+  opacity: 0.6;
+}
+.thought h5 {
+  font-size: 18px;
+  font-style: italic;
+  color: #111111;
+  opacity: 0.6;
+  padding-top: 9px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolios:nth-child(1) {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.portfolios:nth-child(2) {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.portfolios:nth-child(3) {
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.portfolios:nth-child(4) {
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+.portfolios:nth-child(5) {
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+.portfolios:nth-child(6) {
+  grid-row-start: 4;
+  grid-row-end: 7;
+}
+.portfolios:nth-child(7) {
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+.portfolios:nth-child(8) {
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+.portfolios:nth-child(9) {
+  grid-row-start: 7;
+  grid-row-end: 10;
+}
+.portfolios:nth-child(10) {
+  grid-row-start: 9;
+  grid-row-end: 12;
+}
+.portfolios:nth-child(11) {
+  grid-row-start: 8;
+  grid-row-end: 12;
+}
+.portfolios:nth-child(12) {
+  grid-row-start: 10;
+  grid-row-end: 12;
+}

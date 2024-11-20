@@ -1,0 +1,33 @@
+@import '../styles/vars';
+
+body {
+    font-family: "Mulish", serif;
+    color: $primary_color;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h2,
+h3,
+h5,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

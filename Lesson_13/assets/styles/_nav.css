@@ -1,0 +1,30 @@
+header {
+  padding-top: 60px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  max-width: 90px;
+}
+
+.nav_list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+.nav_list li {
+  display: inline-flex;
+  vertical-align: middle;
+}
+.nav_list .navlist_item {
+  font-size: 18px;
+  font-weight: bold;
+  color: #111111;
+  letter-spacing: -0.35px;
+}
