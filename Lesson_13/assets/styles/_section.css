@@ -191,6 +191,7 @@
   justify-content: space-between;
   margin-top: 115px;
   margin-bottom: 50px;
+  align-items: center;
 }
 
 .footer_logo {
@@ -226,6 +227,10 @@
 .footer_link .icons_link {
   display: flex;
   gap: 24px;
+}
+.footer_link .icons_link li {
+  display: inline-block;
+  height: 15px;
 }
 .footer_link .icons_link img {
   width: 15px;
