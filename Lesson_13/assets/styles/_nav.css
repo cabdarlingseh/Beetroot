@@ -18,13 +18,17 @@ header {
   display: flex;
   gap: 30px;
 }
-.nav_list li {
-  display: inline-flex;
-  vertical-align: middle;
-}
-.nav_list .navlist_item {
+
+.navlist_item {
   font-size: 18px;
   font-weight: bold;
   color: #111111;
   letter-spacing: -0.35px;
+  display: inline-flex;
+  vertical-align: middle;
+  transition: color 0.5s ease;
+}
+.navlist_item:hover {
+  transform: scale(1.1);
+  color: #ff0000;
 }

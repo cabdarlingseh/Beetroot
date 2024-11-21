@@ -51,15 +51,26 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 20px;
+    margin-bottom: 90px;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
 
 .portfolios {
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease,
+            opacity 0.3s ease;
+
+        &:hover {
+            transform: scale(105%);
+            opacity: 0.8;
+        }
+    }
+
     &:nth-child(1) {
         grid-row-start: 1;
         grid-row-end: 3;
@@ -120,4 +131,151 @@ img {
         grid-row-end: 12;
     }
 
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 40rem 1fr;
+    gap: 95px;
+    margin-bottom: 100px;
+
+    .description {
+        font-weight: bold;
+        color: $primary_color;
+        line-height: 38px;
+        font-size: 28px;
+    }
+}
+
+.service_list {
+
+    white-space: nowrap;
+
+    ul {
+        display: inline-block;
+        gap: 70px;
+        columns: 2;
+    }
+
+    li {
+        font-size: 18px;
+        opacity: 0.6;
+        color: $primary_color;
+        margin-bottom: 10px;
+    }
+}
+
+.awards {
+    border-top: 2px solid $secondary_color;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 42% 58%;
+
+    .competition {
+        font-size: 22px;
+        font-weight: bold;
+        color: $primary_color
+    }
+
+    .category {
+        display: grid;
+        gap: 80px;
+    }
+}
+
+.positions {
+    display: grid;
+    grid-template-columns: 1.5fr 185px 1fr;
+
+    .title {
+        font-weight: bold;
+        font-size: 18px;
+        color: $primary_color;
+    }
+
+    .title_text {
+        h5 {
+            font-size: 16px;
+            color: inherit;
+        }
+
+        p {
+            opacity: 0.6;
+            font-size: 16px;
+            line-height: 26px;
+            padding-top: 12px;
+        }
+    }
+}
+
+.second_nomination {
+    margin-bottom: 58px;
+}
+
+.award_year {
+    justify-self: end;
+    font-size: 16px;
+    color: $primary_color;
+}
+
+.second_award {
+    border-bottom: 2px solid $secondary_color;
+}
+
+.footer_nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 115px;
+    margin-bottom: 50px;
+}
+
+.footer_logo {
+    max-width: 90px;
+}
+
+.footer_link {
+    display: flex;
+    flex-direction: row;
+    gap: 95px;
+    align-items: center;
+
+    .text_links {
+        display: flex;
+        gap: 30px;
+
+        li {
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: -0.35px;
+            color: $primary_color;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .navlist_item {
+            transition: color 0.5s ease;
+
+            &:hover {
+                transform: scale(1.1);
+                color: $hover_color;
+            }
+        }
+    }
+
+    .icons_link {
+        display: flex;
+        gap: 24px;
+
+        img {
+            width: 15px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+    }
 }

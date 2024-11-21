@@ -46,14 +46,19 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   gap: 20px;
+  margin-bottom: 90px;
 }
 
-img {
+.portfolios img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
-
+.portfolios img:hover {
+  transform: scale(105%);
+  opacity: 0.8;
+}
 .portfolios:nth-child(1) {
   grid-row-start: 1;
   grid-row-end: 3;
@@ -101,4 +106,132 @@ img {
 .portfolios:nth-child(12) {
   grid-row-start: 10;
   grid-row-end: 12;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: 40rem 1fr;
+  gap: 95px;
+  margin-bottom: 100px;
+}
+.services .description {
+  font-weight: bold;
+  color: #111111;
+  line-height: 38px;
+  font-size: 28px;
+}
+
+.service_list {
+  white-space: nowrap;
+}
+.service_list ul {
+  display: inline-block;
+  gap: 70px;
+  columns: 2;
+}
+.service_list li {
+  font-size: 18px;
+  opacity: 0.6;
+  color: #111111;
+  margin-bottom: 10px;
+}
+
+.awards {
+  border-top: 2px solid #979797;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 42% 58%;
+}
+.awards .competition {
+  font-size: 22px;
+  font-weight: bold;
+  color: #111111;
+}
+.awards .category {
+  display: grid;
+  gap: 80px;
+}
+
+.positions {
+  display: grid;
+  grid-template-columns: 1.5fr 185px 1fr;
+}
+.positions .title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #111111;
+}
+.positions .title_text h5 {
+  font-size: 16px;
+  color: inherit;
+}
+.positions .title_text p {
+  opacity: 0.6;
+  font-size: 16px;
+  line-height: 26px;
+  padding-top: 12px;
+}
+
+.second_nomination {
+  margin-bottom: 58px;
+}
+
+.award_year {
+  justify-self: end;
+  font-size: 16px;
+  color: #111111;
+}
+
+.second_award {
+  border-bottom: 2px solid #979797;
+}
+
+.footer_nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 115px;
+  margin-bottom: 50px;
+}
+
+.footer_logo {
+  max-width: 90px;
+}
+
+.footer_link {
+  display: flex;
+  flex-direction: row;
+  gap: 95px;
+  align-items: center;
+}
+.footer_link .text_links {
+  display: flex;
+  gap: 30px;
+}
+.footer_link .text_links li {
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: -0.35px;
+  color: #111111;
+}
+.footer_link .text_links a {
+  color: inherit;
+}
+.footer_link .text_links .navlist_item {
+  transition: color 0.5s ease;
+}
+.footer_link .text_links .navlist_item:hover {
+  transform: scale(1.1);
+  color: #ff0000;
+}
+.footer_link .icons_link {
+  display: flex;
+  gap: 24px;
+}
+.footer_link .icons_link img {
+  width: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.footer_link .icons_link img:hover {
+  transform: scale(1.5);
 }

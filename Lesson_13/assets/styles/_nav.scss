@@ -19,16 +19,19 @@ header {
     padding: 0;
     display: flex;
     gap: 30px;
+}
 
-    li {
-        display: inline-flex;
-        vertical-align: middle;
-    }
+.navlist_item {
+    font-size: 18px;
+    font-weight: bold;
+    color: $primary_color;
+    letter-spacing: -0.35px;
+    display: inline-flex;
+    vertical-align: middle;
+    transition: color 0.5s ease;
 
-    .navlist_item {
-        font-size: 18px;
-        font-weight: bold;
-        color: $primary_color;
-        letter-spacing: -0.35px;
+    &:hover {
+        transform: scale(1.1);
+        color: $hover_color;
     }
 }
