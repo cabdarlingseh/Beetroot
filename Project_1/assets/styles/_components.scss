@@ -1,0 +1,42 @@
+@import '../styles/vars';
+
+.search_bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 108px;
+
+    form {
+        display: flex;
+    }
+
+    input {
+        display: flex;
+        justify-content: center;
+        min-width: 503px;
+        height: 63px;
+        width: 100%;
+        border: none;
+        letter-spacing: 2.8px;
+        line-height: 26px;
+        font-size: 14px;
+        color: $input_text_color;
+        text-transform: capitalize;
+        padding: 19px 108px;
+        font-family: inherit;
+    }
+}
+
+
+.btn {
+    background-color: $base_color;
+    min-width: 153px;
+    text-transform: uppercase;
+    color: $primary_color;
+    border: 1px solid $primary_color;
+    font-family: "Aleo", serif;
+    padding: 16px 38px 16px 23px;
+    letter-spacing: 1.4px;
+    line-height: 26px;
+    font-size: 14px;
+    cursor: pointer;
+}

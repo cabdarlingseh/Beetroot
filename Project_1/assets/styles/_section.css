@@ -1,0 +1,50 @@
+header {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.intro {
+  background-image: url("./images/image1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  max-width: 1770px;
+}
+
+.intro_texts {
+  margin: 0 auto;
+  padding-top: 264px;
+  padding-bottom: 108px;
+}
+
+.title_text {
+  letter-spacing: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 26px;
+  letter-spacing: 4.8px;
+  text-align: center;
+  margin-bottom: 11px;
+}
+
+.title_text_info {
+  line-height: 26px;
+  letter-spacing: 6.82px;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 11px;
+}
+
+.search_button {
+  position: relative;
+}
+.search_button img {
+  position: absolute;
+  top: 30%;
+  left: 83%;
+  width: 22px;
+  height: 24px;
+  transform: translate(-50%);
+}
