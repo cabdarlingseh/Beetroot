@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  max-width: 1175px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 615px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .wrapper {
+    max-width: 300px;
+  }
+}
+
+.navigation {
+  display: flex;
+  padding-top: 70px;
+  justify-content: right;
+}
+@media screen and (max-width: 768px) {
+  .navigation {
+    padding-top: 43px;
+  }
+}
+
+.list {
+  display: flex;
+  margin-right: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  display: inline-flex;
+  vertical-align: middle;
+  gap: 30px;
+}
+
+li {
+  font-family: "Source Sans 3", sans-serif;
+  line-height: 22.4px;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  width: 24px;
+  height: 24px;
+}
+
+.dots_container {
+  position: relative;
+  display: flex;
+  background-color: transparent;
+}
+
+.dots_divider {
+  display: flex;
+  align-self: center;
+  gap: 4px;
+}
+
+.dots_icon_first,
+.dots_icon_second,
+.dots_icon_third {
+  width: 4px;
+  height: 4px;
+  background-color: #242635;
+  border-radius: 3px;
+}
+
+.wrapper_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heading {
+  margin-top: 145px;
+  margin-bottom: 45px;
+  max-width: 574px;
+  width: 100%;
+}
+.heading h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 84px;
+  line-height: 102px;
+  letter-spacing: -2px;
+  margin-bottom: 28px;
+}
+.heading p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 22px;
+  line-height: 34px;
+}
+@media screen and (max-width: 768px) {
+  .heading {
+    margin-top: 228px;
+    min-height: 170px;
+  }
+}
+
+.image_desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 328px;
+}
+.image_desc .main_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 864px;
+}

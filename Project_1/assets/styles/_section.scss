@@ -9,10 +9,8 @@ header {
     background-image: url('./images/image1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    // height: 100vh;
     width: 100%;
-    max-width: 1770px;
-
 }
 
 .intro_texts {
@@ -21,6 +19,9 @@ header {
     margin: 0 auto;
     padding-top: 264px;
     padding-bottom: 108px;
+    top: 70px;
+    position: relative;
+    left: 65px
 }
 
 .title_text {
@@ -39,7 +40,7 @@ header {
     letter-spacing: 6.82px;
     font-size: 22px;
     text-align: center;
-    margin-bottom: 11px;
+    margin-bottom: 48px;
 }
 
 .search_button {
@@ -52,5 +53,100 @@ header {
         width: 22px;
         height: 24px;
         transform: translate(-50%);
+    }
+}
+
+.scroll {
+    text-align: center;
+    margin-bottom: 134px;
+
+    h3 {
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: 2.8px;
+    }
+
+    i {
+        width: 17px;
+        height: 11px;
+    }
+}
+
+.header_navigation {
+    background-color: $base_color;
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+
+    .header_navigation_container {
+        max-width: 1175px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            max-width: 186px;
+            width: 100%;
+            height: 20px;
+        }
+    }
+}
+
+.nav_list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 12px;
+
+    li {
+        display: inline-flex;
+        vertical-align: middle;
+        font-family: "Aleo", serif;
+        line-height: 26px;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+}
+
+.why_choose_us_container {
+    background-image: url('./images/background_image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 685px;
+    width: 100%;
+}
+
+.why_choose_us {
+    width: 100%;
+    max-width: 1175px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .why_choose_us_left {
+        width: 51%;
+        margin-top: 212px;
+
+        h2 {
+            font-size: 36px;
+            line-height: 26px;
+            font-family: "Aleo", serif;
+            margin-bottom: 50px;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 16px;
+            letter-spacing: 1.6px;
+            line-height: 26px;
+            color: $text_color;
+            margin-bottom: 30px;
+
+            &:last-of-type {
+                margin-bottom: 45px;
+            }
+        }
     }
 }
