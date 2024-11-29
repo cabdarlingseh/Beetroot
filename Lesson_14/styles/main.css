@@ -14,14 +14,14 @@ body {
   max-width: 1175px;
   margin: 0 auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .wrapper {
-    max-width: 615px;
+    min-width: 615px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 380px) {
   .wrapper {
-    max-width: 300px;
+    min-width: 350px;
   }
 }
 
@@ -30,15 +30,51 @@ body {
   padding-top: 70px;
   justify-content: right;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .navigation {
     padding-top: 43px;
   }
 }
 
 .list {
-  display: flex;
+  display: none;
   margin-right: 30px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.list.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media screen and (min-width: 381px) {
+  .list {
+    display: flex;
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.5s ease;
+  }
+}
+.list.active ul li {
+  animation: fadeIn 0.5s ease forwards;
+}
+@media screen and (min-width: 381px) {
+  .list.active ul li .list.active ul li {
+    animation: none;
+  }
 }
 
 a {
@@ -52,11 +88,23 @@ ul {
   vertical-align: middle;
   gap: 30px;
 }
+@media screen and (min-width: 380px) {
+  ul ul {
+    display: flex;
+  }
+}
 
 li {
   font-family: "Source Sans 3", sans-serif;
   line-height: 22.4px;
   font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+li:hover {
+  background-color: #242635;
+  color: #fff;
+  transform: scale(1.1);
+  text-decoration: underline;
 }
 
 button {
@@ -70,6 +118,18 @@ button {
   position: relative;
   display: flex;
   background-color: transparent;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.dots_container.active {
+  animation: bounce 0.5s ease;
 }
 
 .dots_divider {
@@ -107,15 +167,47 @@ button {
   letter-spacing: -2px;
   margin-bottom: 28px;
 }
+@media screen and (max-width: 768px) {
+  .heading h1 {
+    font-size: 72px;
+    line-height: 82.8px;
+    letter-spacing: -1.8px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .heading h1 {
+    font-size: 36px;
+    line-height: 39.6px;
+    letter-spacing: -0.8px;
+  }
+}
 .heading p {
   font-family: "Source Sans 3", sans-serif;
   font-size: 22px;
   line-height: 34px;
 }
 @media screen and (max-width: 768px) {
+  .heading p {
+    line-height: 33px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .heading p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
   .heading {
     margin-top: 228px;
     min-height: 170px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .heading {
+    margin-top: 70px;
+    margin-bottom: 5px;
+    min-height: 115px;
   }
 }
 

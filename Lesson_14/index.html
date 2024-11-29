@@ -46,13 +46,26 @@
 
             <div class="image_desc">
                 <picture>
-                    <source media="(min-width:1280px)" srcset="./assets/images/large_bg.jpg">
-                    <source media="(min-width:768px)" srcset="./assets/images/medium_bg.jpg">
+                    <source media="(min-width:768px)" srcset="./assets/images/large_bg.jpg">
+                    <source media="(min-width:380px)" srcset="./assets/images/medium_bg.jpg">
                     <img src="./assets/images/small_bg.jpg" alt="Mount fuji" class="main_image">
                 </picture>
             </div>
         </main>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const nav = document.querySelector('.list');
+            const kebabButton = document.querySelector('.dots_container');
+
+            kebabButton.addEventListener('click', function () {
+                if (window.innerWidth <= 380) {
+                    nav.classList.toggle('active');
+                    kebabButton.classList.toggle('active');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
