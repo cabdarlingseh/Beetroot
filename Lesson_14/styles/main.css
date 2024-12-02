@@ -35,6 +35,11 @@ body {
     padding-top: 43px;
   }
 }
+@media screen and (max-width: 380px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
 
 .list {
   display: none;
@@ -118,6 +123,12 @@ button {
   position: relative;
   display: flex;
   background-color: transparent;
+}
+@media screen and (max-width: 380px) {
+  .dots_container {
+    position: absolute;
+    right: 10px;
+  }
 }
 
 @keyframes bounce {
@@ -222,4 +233,5 @@ button {
   margin-left: auto;
   margin-right: auto;
   max-width: 864px;
+  width: 100%;
 }
