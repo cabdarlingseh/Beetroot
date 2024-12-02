@@ -3,7 +3,7 @@ $primary-color: #ff9900;
 $secondary-color: #22343D;
 $border-color: #BCD0E5;
 $text-color: #544837;
-$background-gradient: linear-gradient(90deg, rgba(58,177,180,1) 0%, rgba(231,217,217,1) 84%, rgba(252,176,69,1) 100%);
+$background-gradient: linear-gradient(90deg, rgba(58, 177, 180, 1) 0%, rgba(231, 217, 217, 1) 84%, rgba(252, 176, 69, 1) 100%);
 
 // Mixins
 @mixin flex-center {
@@ -167,12 +167,17 @@ button {
 }
 
 // Column Styles
-.column, .professional__column, .footer__signup {
+.column,
+.professional__column,
+.footer__signup {
   display: inline-block;
   vertical-align: top;
 
-  &:first-child { width: 45%; }
-  &:last-child { 
+  &:first-child {
+    width: 45%;
+  }
+
+  &:last-child {
     width: 45%;
     padding-left: 10%;
   }
@@ -198,10 +203,21 @@ button {
     padding: 16px;
     border-radius: 19px;
 
-    &--pointer { background-color: #7752be; }
-    &--survey { background-color: #fab005; }
-    &--preference { background-color: #f03e3d; }
-    &--hourglass { background-color: #4dadf7; }
+    &--pointer {
+      background-color: #7752be;
+    }
+
+    &--survey {
+      background-color: #fab005;
+    }
+
+    &--preference {
+      background-color: #f03e3d;
+    }
+
+    &--hourglass {
+      background-color: #4dadf7;
+    }
   }
 
   &__details {
@@ -294,7 +310,9 @@ button {
     border: 1px solid $border-color;
     border-radius: 4px;
 
-    &:hover { border-color: $primary-color; }
+    &:hover {
+      border-color: $primary-color;
+    }
 
     &:active,
     &:focus,
@@ -320,7 +338,8 @@ h2 {
   padding-bottom: 60px;
 }
 
-h3, p {
+h3,
+p {
   margin: 0;
   padding: 0;
 }

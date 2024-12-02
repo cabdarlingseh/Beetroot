@@ -9,7 +9,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: #000;
-  background: linear-gradient(90deg, rgb(58, 177, 180) 0%, rgb(231, 217, 217) 84%, rgb(252, 176, 69) 100%);
+  background: linear-gradient(90deg, #3ab1b4 0%, #e7d9d9 84%, #fcb045 100%);
 }
 
 .container {
@@ -123,14 +123,20 @@ button {
   margin-right: 8px;
 }
 
-.column, .professional__column, .footer__signup {
+.column,
+.professional__column,
+.footer__signup {
   display: inline-block;
   vertical-align: top;
 }
-.column:first-child, .professional__column:first-child, .footer__signup:first-child {
+.column:first-child,
+.professional__column:first-child,
+.footer__signup:first-child {
   width: 45%;
 }
-.column:last-child, .professional__column:last-child, .footer__signup:last-child {
+.column:last-child,
+.professional__column:last-child,
+.footer__signup:last-child {
   width: 45%;
   padding-left: 10%;
 }
@@ -250,10 +256,6 @@ button {
 .footer__input:hover {
   border-color: #ff9900;
 }
-.footer__input::-moz-selection {
-  outline: 1px solid #ff9900;
-  background-color: #f5f5f5;
-}
 .footer__input:active, .footer__input:focus, .footer__input::selection {
   outline: 1px solid #ff9900;
   background-color: #f5f5f5;
@@ -272,7 +274,8 @@ h2 {
   padding-bottom: 60px;
 }
 
-h3, p {
+h3,
+p {
   margin: 0;
   padding: 0;
 }
@@ -289,4 +292,4 @@ h3, p {
 main {
   border-bottom: 1px solid rgba(188, 208, 229, 0.5);
   padding-bottom: 120px;
-}/*# sourceMappingURL=main.css.map */
+}
