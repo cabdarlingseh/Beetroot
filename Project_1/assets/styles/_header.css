@@ -1,0 +1,66 @@
+header {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.intro {
+  background-image: url("./images/image1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.intro_texts {
+  margin: 0 auto;
+  padding-top: 264px;
+  padding-bottom: 108px;
+  top: 70px;
+  position: relative;
+}
+
+.title_text {
+  letter-spacing: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 26px;
+  letter-spacing: 4.8px;
+  text-align: center;
+  margin-bottom: 11px;
+}
+
+.title_text_info {
+  line-height: 26px;
+  letter-spacing: 6.82px;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.search_button {
+  position: relative;
+}
+.search_button img {
+  position: absolute;
+  top: 30%;
+  left: 83%;
+  width: 22px;
+  height: 24px;
+  transform: translate(-50%);
+}
+
+.scroll {
+  text-align: center;
+  margin-bottom: 134px;
+}
+.scroll h3 {
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 2.8px;
+}
+.scroll i {
+  width: 17px;
+  height: 11px;
+}
