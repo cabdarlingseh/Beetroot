@@ -65,41 +65,6 @@ header {
   height: 11px;
 }
 
-.header_navigation {
-  background-color: #5474fd;
-  width: 100%;
-  min-height: 80px;
-  display: flex;
-}
-.header_navigation .header_navigation_container {
-  max-width: 1175px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header_navigation .header_navigation_container .logo {
-  max-width: 186px;
-  width: 100%;
-  height: 20px;
-}
-
-.nav_list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 12px;
-}
-.nav_list li {
-  display: inline-flex;
-  vertical-align: middle;
-  font-family: "Aleo", serif;
-  line-height: 26px;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
 .why_choose_us_container {
   background-image: url("./images/background_image.jpg");
   background-repeat: no-repeat;
@@ -218,4 +183,86 @@ header {
 .bg_lines::after {
     width: 250px;
   }
+}
+.grand_spain_container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grand_spain_one {
+  background-image: url("./images/section2_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin: 0 auto;
+}
+.grand_spain_one .grand_spain_one_container {
+  max-width: 1175px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 230px;
+}
+.grand_spain_one .grand_spain_one_container .spain_box_one {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card {
+  max-width: 540px;
+  width: 100%;
+  background-color: #333333;
+  padding-left: 30px;
+  margin-bottom: 100px;
+}
+.card h3 {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 26px;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 47px;
+}
+.card h4 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  line-height: 26px;
+  font-size: 20px;
+  margin-top: 23px;
+  font-weight: 400;
+}
+.card p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 13px;
+  margin-bottom: 46px;
+}
+.card .btn {
+  margin-bottom: 49px;
+  border: none;
+  text-transform: uppercase;
+  max-width: 228px;
+  width: 100%;
+}
+
+.grand_spain_two {
+  background-image: url("./images/section3_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin: 0 auto;
+}
+.grand_spain_two .grand_spain_two_container {
+  max-width: 1175px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.spain_box_two {
+  display: flex;
+  justify-content: flex-end;
+}
+.spain_box_two .card {
+  margin-top: 227px;
 }
