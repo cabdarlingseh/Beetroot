@@ -177,6 +177,11 @@
   text-transform: uppercase;
   max-width: 228px;
   width: 100%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.card .btn:hover {
+  background-color: #3f5bbf;
+  transform: scale(1.05);
 }
 
 .grand_spain_two {

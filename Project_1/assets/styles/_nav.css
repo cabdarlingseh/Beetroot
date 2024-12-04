@@ -32,3 +32,8 @@
   font-size: 14px;
   text-transform: uppercase;
 }
+.nav_list a:hover {
+  text-decoration: underline;
+  color: #E0E0E0;
+  text-underline-offset: 10px;
+}

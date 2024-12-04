@@ -20,9 +20,9 @@
         line-height: 26px;
         font-size: 14px;
         color: $input_text_color;
-        text-transform: capitalize;
         padding: 19px 108px;
         font-family: inherit;
+        outline: none;
     }
 }
 
@@ -49,4 +49,11 @@
     font-size: 16px;
     padding: 16px 35px;
     border: none;
+    transition: background-color 0.3s ease,
+        transform 0.3s ease;
+
+    &:hover {
+        background-color: $btn_hover;
+        transform: scale(1.05);
+    }
 }

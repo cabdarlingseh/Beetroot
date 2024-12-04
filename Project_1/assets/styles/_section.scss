@@ -206,6 +206,13 @@
         text-transform: uppercase;
         max-width: 228px;
         width: 100%;
+        transition: background-color 0.3s ease,
+            transform 0.3s ease;
+
+        &:hover {
+            background-color: $btn_hover;
+            transform: scale(1.05);
+        }
     }
 }
 

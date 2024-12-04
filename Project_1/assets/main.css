@@ -41,6 +41,7 @@ header {
   padding-bottom: 108px;
   top: 70px;
   position: relative;
+  cursor: pointer;
 }
 
 .title_text {
@@ -60,6 +61,20 @@ header {
   font-size: 22px;
   text-align: center;
   margin-bottom: 48px;
+}
+
+.search_bar {
+  transition: transform 0.3s ease;
+}
+.search_bar:hover {
+  transform: translateY(2px);
+}
+.search_bar i {
+  position: absolute;
+  top: 37%;
+  left: 82%;
+  transform: translate(-50%);
+  font-size: 16px;
 }
 
 .search_button {
@@ -82,10 +97,19 @@ header {
   font-size: 14px;
   line-height: 26px;
   letter-spacing: 2.8px;
+  transition: all 0.2s ease-in-out;
+}
+.scroll h3:hover {
+  transform: scale(1.3);
+  text-transform: uppercase;
 }
 .scroll i {
   width: 17px;
   height: 11px;
+  transition: transform 0.3s ease;
+}
+.scroll i:hover {
+  transform: translateY(5px);
 }
 
 .header_navigation {
@@ -121,6 +145,11 @@ header {
   line-height: 26px;
   font-size: 14px;
   text-transform: uppercase;
+}
+.nav_list a:hover {
+  text-decoration: underline;
+  color: #E0E0E0;
+  text-underline-offset: 10px;
 }
 
 .why_choose_us_container {
@@ -302,6 +331,11 @@ header {
   text-transform: uppercase;
   max-width: 228px;
   width: 100%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.card .btn:hover {
+  background-color: #3f5bbf;
+  transform: scale(1.05);
 }
 
 .grand_spain_two {
@@ -405,9 +439,9 @@ header {
   line-height: 26px;
   font-size: 14px;
   color: #999999;
-  text-transform: capitalize;
   padding: 19px 108px;
   font-family: inherit;
+  outline: none;
 }
 
 .btn {
@@ -432,6 +466,11 @@ header {
   font-size: 16px;
   padding: 16px 35px;
   border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn_places:hover {
+  background-color: #3f5bbf;
+  transform: scale(1.05);
 }
 
 footer {
@@ -471,6 +510,13 @@ footer {
   justify-content: center;
   gap: 25px;
   margin-top: 30px;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.5);
 }
 
 .linkedin {

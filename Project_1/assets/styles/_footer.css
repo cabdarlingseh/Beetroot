@@ -37,6 +37,13 @@ footer {
   margin-top: 30px;
 }
 
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.5);
+}
+
 .linkedin {
   color: #5474fd;
 }
