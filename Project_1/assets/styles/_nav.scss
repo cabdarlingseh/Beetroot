@@ -134,3 +134,9 @@
         top: 30%;
     }
 }
+
+@media screen and (max-width: 380px) {
+    .nav {
+        width: 50%;
+    }
+}

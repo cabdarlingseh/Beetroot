@@ -34,9 +34,15 @@ header {
   margin: 0 auto;
   height: 100vh;
 }
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 768px) {
   .intro {
     background-size: cover;
+  }
+}
+@media screen and (max-width: 380px) {
+  .intro {
+    background-size: cover;
+    height: 60vh;
   }
 }
 
@@ -117,6 +123,25 @@ header {
   transform: translateY(5px);
 }
 
+@media screen and (max-width: 380px) {
+  .intro_texts {
+    padding-top: 90px;
+    padding-bottom: 0px;
+  }
+  .intro_texts h1 {
+    font-size: 30px;
+  }
+  .intro_texts p {
+    font-size: 18px;
+  }
+
+  .scroll {
+    margin-bottom: 0;
+  }
+  .scroll h3 {
+    text-transform: none;
+  }
+}
 .header_navigation {
   background-color: #5474fd;
   width: 100%;
@@ -240,6 +265,11 @@ header {
     gap: 50px;
     position: relative;
     top: 30%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .nav {
+    width: 50%;
   }
 }
 .why_choose_us_container {
@@ -627,6 +657,27 @@ header {
     border-bottom-right-radius: 4px;
   }
 }
+@media screen and (max-width: 380px) {
+  .grand_spain_one {
+    background-size: cover;
+  }
+
+  .grand_spain_two {
+    background-size: cover;
+  }
+
+  .card {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 225px;
+    padding: 12px;
+  }
+
+  .tourist_quote {
+    width: 100%;
+  }
+}
 .search_bar {
   display: flex;
   justify-content: center;
@@ -711,6 +762,31 @@ header {
     top: 32%;
     left: 62%;
     font-size: 19px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .search_bar input {
+    max-width: 250px;
+    letter-spacing: -0.5px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .btn {
+    max-width: 250px;
+    font-size: 16px;
+    line-height: 10px;
+  }
+
+  .search_bar i {
+    position: absolute;
+    top: 29%;
+    left: 66%;
+    font-size: 16px;
+  }
+
+  .search_bar {
+    margin-bottom: 20px;
   }
 }
 footer {

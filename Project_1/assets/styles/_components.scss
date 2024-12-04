@@ -93,3 +93,29 @@
         font-size: 19px;
     }
 }
+
+@media screen and(max-width:380px) {
+    .search_bar input {
+        max-width: 250px;
+        letter-spacing: -0.5px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .btn {
+        max-width: 250px;
+        font-size: 16px;
+        line-height: 10px;
+    }
+
+    .search_bar i {
+        position: absolute;
+        top: 29%;
+        left: 66%;
+        font-size: 16px;
+    }
+
+    .search_bar {
+        margin-bottom: 20px;
+    }
+}

@@ -13,8 +13,13 @@ header {
     margin: 0 auto;
     height: 100vh;
 
-    @media screen and(max-width:660px) {
+    @media screen and(max-width:768px) {
         background-size: cover;
+    }
+
+    @media screen and(max-width:380px) {
+        background-size: cover;
+        height: 60vh;
     }
 }
 
@@ -98,6 +103,30 @@ header {
 
         &:hover {
             transform: translateY(5px);
+        }
+    }
+}
+
+@media screen and(max-width:380px) {
+
+    .intro_texts {
+        padding-top: 90px;
+        padding-bottom: 0px;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .scroll {
+        margin-bottom: 0;
+
+        h3 {
+            text-transform: none;
         }
     }
 }

@@ -11,9 +11,15 @@ header {
   margin: 0 auto;
   height: 100vh;
 }
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 768px) {
   .intro {
     background-size: cover;
+  }
+}
+@media screen and (max-width: 380px) {
+  .intro {
+    background-size: cover;
+    height: 60vh;
   }
 }
 
@@ -92,4 +98,24 @@ header {
 }
 .scroll i:hover {
   transform: translateY(5px);
+}
+
+@media screen and (max-width: 380px) {
+  .intro_texts {
+    padding-top: 90px;
+    padding-bottom: 0px;
+  }
+  .intro_texts h1 {
+    font-size: 30px;
+  }
+  .intro_texts p {
+    font-size: 18px;
+  }
+
+  .scroll {
+    margin-bottom: 0;
+  }
+  .scroll h3 {
+    text-transform: none;
+  }
 }
