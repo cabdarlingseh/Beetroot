@@ -11,6 +11,11 @@ header {
   margin: 0 auto;
   height: 100vh;
 }
+@media screen and (max-width: 660px) {
+  .intro {
+    background-size: cover;
+  }
+}
 
 .intro_texts {
   margin: 0 auto;

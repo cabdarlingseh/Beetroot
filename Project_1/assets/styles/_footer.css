@@ -47,3 +47,9 @@ footer {
 .linkedin {
   color: #5474fd;
 }
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 20px 0 10px 0;
+  }
+}

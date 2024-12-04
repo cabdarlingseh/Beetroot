@@ -7,7 +7,7 @@
 }
 
 .why_choose_us {
-  width: 100%;
+  width: 90%;
   max-width: 1175px;
   margin: 0 auto;
   display: flex;
@@ -35,6 +35,40 @@
   margin-bottom: 45px;
 }
 
+@media screen and (max-width: 768px) {
+  .why_choose_us_container {
+    background-size: cover;
+  }
+
+  .why_choose_us {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .why_choose_us .why_choose_us_left {
+    width: 90%;
+    padding-top: 20px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+  .why_choose_us .why_choose_us_left .btn_places {
+    width: 100%;
+    max-width: 240px;
+    font-size: 18px;
+  }
+  .why_choose_us .why_choose_us_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .why_choose_us .why_choose_us_right .wcu_img_up {
+    margin-top: 50px;
+    padding-right: 0px;
+  }
+  .why_choose_us .why_choose_us_right .wcu_img_down {
+    padding-left: 0px;
+  }
+}
 .why_choose_us_right .wcu_img_up {
   margin-top: 118px;
   padding-right: 90px;
@@ -112,9 +146,19 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .elements {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .elements .elements_icons h3 {
+    font-size: 24px;
+  }
+
   .bg_lines::before,
 .bg_lines::after {
-    width: 250px;
+    display: none;
   }
 }
 .grand_spain_container {
@@ -205,6 +249,51 @@
   margin-top: 227px;
 }
 
+@media screen and (max-width: 768px) {
+  .grand_spain_one {
+    background-size: cover;
+  }
+
+  .grand_spain_two {
+    background-size: cover;
+  }
+
+  .grand_spain_one .grand_spain_one_container,
+.grand_spain_two .grand_spain_two_container {
+    padding-top: 20px;
+  }
+
+  .card {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 380px;
+    padding: 5px;
+  }
+  .card h3 {
+    margin-top: 5px;
+    text-align: center;
+  }
+  .card h4 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .card p {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .card .btn {
+    margin-bottom: 20px;
+    max-width: 180px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  .spain_box_two .card {
+    margin-top: 0px;
+  }
+}
 .tourist {
   background-image: url("./images/section4_bg.jpg");
   background-repeat: no-repeat;
@@ -228,6 +317,11 @@
   text-transform: capitalize;
 }
 
+@media screen and (max-width: 768px) {
+  .tourist {
+    background-size: cover;
+  }
+}
 .tourist_comments {
   display: flex;
   padding-bottom: 200px;
@@ -264,4 +358,28 @@
   color: #5474fd;
   font-size: 35px;
   padding-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .tourist .tourist_container h2 {
+    padding-top: 45px;
+    margin-bottom: 50px;
+  }
+
+  .tourist_comments {
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .tourist_image {
+    margin-bottom: -4px;
+  }
+
+  .tourist_quote {
+    width: 87.8%;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
 }

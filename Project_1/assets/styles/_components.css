@@ -9,9 +9,9 @@
 .search_bar input {
   display: flex;
   justify-content: center;
-  min-width: 503px;
+  width: 503px;
   height: 63px;
-  width: 100%;
+  max-width: 100%;
   border: none;
   letter-spacing: 2.8px;
   line-height: 26px;
@@ -49,4 +49,38 @@
 .btn_places:hover {
   background-color: #3f5bbf;
   transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+  .search_bar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .search_bar input {
+    text-align: center;
+    width: 100%;
+    max-width: 440px;
+    padding: 0;
+    font-size: 18px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 440px;
+    font-size: 18px;
+  }
+
+  .search_bar i {
+    position: absolute;
+    top: 32%;
+    left: 62%;
+    font-size: 19px;
+  }
 }

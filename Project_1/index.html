@@ -41,7 +41,8 @@
             <div class="header_navigation_container">
                 <img src="./assets/images/Logo.svg" id="nav_contents" alt="Page Logo" class="logo"></a>
 
-                <nav>
+                <nav class="nav" id="nav">
+                    <button class="close-button">&times;</button>
                     <ul class="nav_list">
                         <li><a href="#">Who we are</a></li>
                         <li><a href="#">What we do</a></li>
@@ -49,6 +50,12 @@
                         <li><a href="#">Contact us</a></li>
                     </ul>
                 </nav>
+
+                <div class="hamburger-menu" id="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
             </div>
 
         </div>
@@ -197,6 +204,24 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const nav = document.querySelector('.nav');
+            const closeButton = document.querySelector('.close-button');
+            const bars = document.querySelectorAll('.bar');
+
+            hamburgerMenu.addEventListener('click', function () {
+                nav.classList.toggle('active');
+                bars.forEach(bar => bar.classList.toggle('hidden'));
+            });
+
+            closeButton.addEventListener('click', function () {
+                nav.classList.remove('active');
+                bars.forEach(bar => bar.classList.remove('hidden'));
+            });
+        });
+    </script>
 </body>
 
 </html>

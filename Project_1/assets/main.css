@@ -34,6 +34,11 @@ header {
   margin: 0 auto;
   height: 100vh;
 }
+@media screen and (max-width: 660px) {
+  .intro {
+    background-size: cover;
+  }
+}
 
 .intro_texts {
   margin: 0 auto;
@@ -117,6 +122,7 @@ header {
   width: 100%;
   min-height: 80px;
   display: flex;
+  position: relative;
 }
 .header_navigation .header_navigation_container {
   max-width: 1175px;
@@ -130,6 +136,35 @@ header {
   max-width: 186px;
   width: 100%;
   height: 20px;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  right: 10px;
+  z-index: 45;
+}
+.hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 4px 0;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.bar.hidden {
+  display: none;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #ffffff;
+  cursor: pointer;
+  display: none;
 }
 
 .nav_list {
@@ -152,6 +187,61 @@ header {
   text-underline-offset: 10px;
 }
 
+.close-button {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 60px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  transition: transform 0.3s ease;
+}
+.close-button:hover {
+  transform: translateY(5px);
+}
+
+@media screen and (max-width: 900px) {
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100vh;
+    background-color: #5474fd;
+    padding: 20px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
+    z-index: 44;
+  }
+  .nav li {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav.active .close-button {
+    display: block;
+  }
+
+  .nav_list {
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+    top: 30%;
+  }
+}
 .why_choose_us_container {
   background-image: url("./images/background_image.jpg");
   background-repeat: no-repeat;
@@ -161,7 +251,7 @@ header {
 }
 
 .why_choose_us {
-  width: 100%;
+  width: 90%;
   max-width: 1175px;
   margin: 0 auto;
   display: flex;
@@ -189,6 +279,40 @@ header {
   margin-bottom: 45px;
 }
 
+@media screen and (max-width: 768px) {
+  .why_choose_us_container {
+    background-size: cover;
+  }
+
+  .why_choose_us {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .why_choose_us .why_choose_us_left {
+    width: 90%;
+    padding-top: 20px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+  .why_choose_us .why_choose_us_left .btn_places {
+    width: 100%;
+    max-width: 240px;
+    font-size: 18px;
+  }
+  .why_choose_us .why_choose_us_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .why_choose_us .why_choose_us_right .wcu_img_up {
+    margin-top: 50px;
+    padding-right: 0px;
+  }
+  .why_choose_us .why_choose_us_right .wcu_img_down {
+    padding-left: 0px;
+  }
+}
 .why_choose_us_right .wcu_img_up {
   margin-top: 118px;
   padding-right: 90px;
@@ -266,9 +390,19 @@ header {
   }
 }
 @media screen and (max-width: 768px) {
+  .elements {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .elements .elements_icons h3 {
+    font-size: 24px;
+  }
+
   .bg_lines::before,
 .bg_lines::after {
-    width: 250px;
+    display: none;
   }
 }
 .grand_spain_container {
@@ -359,6 +493,51 @@ header {
   margin-top: 227px;
 }
 
+@media screen and (max-width: 768px) {
+  .grand_spain_one {
+    background-size: cover;
+  }
+
+  .grand_spain_two {
+    background-size: cover;
+  }
+
+  .grand_spain_one .grand_spain_one_container,
+.grand_spain_two .grand_spain_two_container {
+    padding-top: 20px;
+  }
+
+  .card {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 380px;
+    padding: 5px;
+  }
+  .card h3 {
+    margin-top: 5px;
+    text-align: center;
+  }
+  .card h4 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .card p {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .card .btn {
+    margin-bottom: 20px;
+    max-width: 180px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  .spain_box_two .card {
+    margin-top: 0px;
+  }
+}
 .tourist {
   background-image: url("./images/section4_bg.jpg");
   background-repeat: no-repeat;
@@ -382,6 +561,11 @@ header {
   text-transform: capitalize;
 }
 
+@media screen and (max-width: 768px) {
+  .tourist {
+    background-size: cover;
+  }
+}
 .tourist_comments {
   display: flex;
   padding-bottom: 200px;
@@ -420,6 +604,29 @@ header {
   padding-right: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .tourist .tourist_container h2 {
+    padding-top: 45px;
+    margin-bottom: 50px;
+  }
+
+  .tourist_comments {
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .tourist_image {
+    margin-bottom: -4px;
+  }
+
+  .tourist_quote {
+    width: 87.8%;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+}
 .search_bar {
   display: flex;
   justify-content: center;
@@ -431,9 +638,9 @@ header {
 .search_bar input {
   display: flex;
   justify-content: center;
-  min-width: 503px;
+  width: 503px;
   height: 63px;
-  width: 100%;
+  max-width: 100%;
   border: none;
   letter-spacing: 2.8px;
   line-height: 26px;
@@ -473,6 +680,39 @@ header {
   transform: scale(1.05);
 }
 
+@media screen and (max-width: 768px) {
+  .search_bar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .search_bar input {
+    text-align: center;
+    width: 100%;
+    max-width: 440px;
+    padding: 0;
+    font-size: 18px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 440px;
+    font-size: 18px;
+  }
+
+  .search_bar i {
+    position: absolute;
+    top: 32%;
+    left: 62%;
+    font-size: 19px;
+  }
+}
 footer {
   background-color: #333333;
   padding: 120px 0 50px;
@@ -521,4 +761,10 @@ footer {
 
 .linkedin {
   color: #5474fd;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 20px 0 10px 0;
+  }
 }
