@@ -48,11 +48,8 @@ footer {
 
     &:hover {
         transform: scale(1.5);
+        color: $base_color;
     }
-}
-
-.linkedin {
-    color: $base_color;
 }
 
 @media screen and(max-width:768px) {

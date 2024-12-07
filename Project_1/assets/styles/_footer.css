@@ -42,9 +42,6 @@ footer {
 }
 .grow:hover {
   transform: scale(1.5);
-}
-
-.linkedin {
   color: #5474fd;
 }
 
