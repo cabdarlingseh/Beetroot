@@ -12,9 +12,9 @@ html {
 }
 @media screen and (max-width: 768px) {
   .header {
-    width: 100%;
-    max-width: 630px;
-    margin: 0 auto;
+    width: 90%;
+    padding: 20px 0;
+    display: flex;
   }
 }
 
@@ -25,6 +25,14 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -70,14 +78,6 @@ ul {
 .header__nav .button {
   margin-right: 12px;
 }
-@media screen and (max-width: 768px) {
-  .header__nav {
-    max-width: 435px;
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 110px;
-  }
-}
 
 .header__menu {
   margin: 0px;
@@ -111,11 +111,6 @@ button {
   border: 1px solid #e4e4e4;
   background-color: #e4e4e4;
 }
-@media screen and (max-width: 768px) {
-  .button {
-    padding: 8px 15px;
-  }
-}
 
 .button.action {
   color: white;
@@ -129,8 +124,93 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-  .header__buttons {
-    margin-left: 20px;
+  .header__logo {
+    margin-bottom: 10px;
+  }
+}
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: fixed;
+  top: 3.5%;
+  right: 8%;
+  z-index: 45;
+}
+.hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.bar.hidden {
+  display: none;
+}
+
+.close-button {
+  display: none;
+  position: relative;
+  top: 0px;
+  left: 25%;
+  font-size: 60px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+  transition: transform 0.3s ease;
+}
+.close-button:hover {
+  transform: translateY(5px);
+}
+
+@media screen and (max-width: 900px) {
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    padding: 20px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
+    z-index: 44;
+    align-items: self-end;
+  }
+  .nav li {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav.active .close-button {
+    display: block;
+  }
+
+  .header__menu {
+    gap: 50px;
+    position: relative;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    right: 15%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .nav {
+    width: 50%;
   }
 }
 .header__buttons .button {
@@ -244,6 +324,14 @@ button {
 @media screen and (max-width: 768px) {
   .feature {
     padding-top: 40px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main_title_actions {
+    display: flex;
+    gap: 25px;
   }
 }
 h3,
@@ -372,6 +460,7 @@ h2 {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    width: 90%;
   }
   .professional .column:first-child {
     width: 55%;
@@ -512,7 +601,7 @@ main {
 
 @media screen and (max-width: 768px) {
   .started_button {
-    width: 120px;
+    width: 150px;
   }
 }
 .email_sign:active,
