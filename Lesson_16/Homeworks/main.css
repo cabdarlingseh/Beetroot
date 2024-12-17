@@ -14,6 +14,12 @@ body {
   background: linear-gradient(90deg, #e0d97e 0%, #45fcf4 38%, #4a7de9 73%, #970b78 100%);
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
   margin-bottom: 20px;
   font-size: 24px;
@@ -26,6 +32,8 @@ input {
   font-family: "Atma", system-ui;
   font-weight: 500;
   font-style: normal;
+  border-radius: 4px;
+  outline: none;
 }
 
 button {
@@ -68,8 +76,6 @@ p {
 
 .selection {
   padding: 20px;
-  background: #e0d97e;
-  background: linear-gradient(90deg, #e0d97e 0%, #45fcf4 38%, #4a7de9 73%, #970b78 100%);
 }
 .selection label {
   font-size: 16px;
@@ -85,6 +91,9 @@ p {
   border-radius: 4px;
   font-size: 16px;
   appearance: none;
+  font-family: "Atma", system-ui;
+  font-weight: 500;
+  font-style: normal;
 }
 .selection select:hover, .selection select:focus {
   border-color: #5474fd;
@@ -108,4 +117,7 @@ p {
 
 #calculateButton {
   background-color: #ff0047;
+}
+#calculateButton:hover {
+  background-color: #ff376f;
 }
