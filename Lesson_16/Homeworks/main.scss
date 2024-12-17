@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Atma",
+        system-ui;
+    font-weight: 500;
+    font-style: normal;
+    color: #333;
+    text-align: center;
+    margin-top: 100px;
+    background: rgb(224, 217, 126);
+    background: linear-gradient(90deg, rgba(224, 217, 126, 1) 0%, rgba(69, 252, 244, 1) 38%, rgba(74, 125, 233, 1) 73%, rgba(151, 11, 120, 1) 100%);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    font-family: "Atma",
+        system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: "Atma",
+        system-ui;
+    font-weight: 500;
+    font-style: normal;
+    border-radius: 4px;
+
+    &:hover {
+        background-color: #218838;
+    }
+}
+
+p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.error {
+    color: #d90d0d;
+}
+
+.success {
+    color: #0fa90f;
+}
+
+.enter_amount {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    max-width: 525px;
+}
+
+.selection {
+    padding: 20px;
+    background: rgb(224, 217, 126);
+    background: linear-gradient(90deg, rgba(224, 217, 126, 1) 0%, rgba(69, 252, 244, 1) 38%, rgba(74, 125, 233, 1) 73%, rgba(151, 11, 120, 1) 100%);
+
+    label {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    select {
+        width: 100%;
+        max-width: 325px;
+        padding: 12px 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        appearance: none;
+
+        &:hover,
+        &:focus {
+            border-color: #5474fd;
+            outline: none;
+        }
+    }
+
+    button {
+        margin-top: 15px;
+        background-color: #5474fd;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+            background-color: #3f5bbf;
+            transform: scale(1.05);
+        }
+    }
+
+    #result2 {
+        margin-top: 12px;
+    }
+}
+
+#calculateButton {
+    background-color: #ff0047;
+}
