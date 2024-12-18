@@ -1,19 +1,105 @@
 @media screen and (max-width: 380px) {
   .header {
     width: 100%;
-    padding: 20px 0;
-    display: flex;
-    margin-bottom: 20px;
   }
-}
-@media screen and (max-width: 380px) {
+
   .hamburger-menu {
+    position: fixed;
+    top: 18px;
+    right: 15px;
+    z-index: 45;
+  }
+
+  .button {
+    padding: 5px 5px;
+  }
+
+  .hero__title {
+    font-size: 24px;
+  }
+
+  .column:first-child {
+    width: 100%;
+  }
+
+  .started_button {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+  }
+
+  .professional .column:first-child {
+    width: 100%;
+  }
+
+  .section_title {
+    padding-bottom: 5px;
+    font-size: 24px;
+  }
+
+  .professional .column:last-child {
+    width: 100%;
+  }
+
+  .column.managers {
     display: flex;
     flex-direction: column;
-    cursor: pointer;
-    position: fixed;
-    top: 3.5%;
-    right: 8%;
-    z-index: 45;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .footer_nav .column {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer_nav > ul {
+    margin: 5px;
+  }
+
+  .footer_nav .column li {
+    margin-bottom: 5px;
+  }
+
+  .email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .email_sign {
+    height: 30px;
+    max-width: 200px;
+    width: 100%;
+  }
+
+  .started_button {
+    width: 120px;
+    padding: 8px 12px;
+  }
+
+  .logo_link img {
+    max-width: 120px;
+  }
+
+  main {
+    padding-bottom: 0px;
   }
 }
