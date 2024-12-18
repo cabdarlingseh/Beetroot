@@ -1,3 +1,5 @@
+@import './media_380.scss';
+
 body,
 html {
     font-family: "Poppins", sans-serif;
@@ -14,6 +16,7 @@ html {
         width: 90%;
         padding: 20px 0;
         display: flex;
+        margin-bottom: 20px;
     }
 }
 
@@ -29,7 +32,7 @@ html {
         width: 90%;
         margin: 0 auto;
         display: flex;
-        justify-content: space-between;
+
     }
 }
 
@@ -162,7 +165,7 @@ button {
     display: none;
     position: relative;
     top: 0px;
-    left: 25%;
+    // left: 25%;
     font-size: 60px;
     background: none;
     border: none;
@@ -217,15 +220,10 @@ button {
         top: 15%;
         display: flex;
         flex-direction: column;
-        right: 15%;
+        right: 30%;
     }
 }
 
-@media screen and (max-width: 380px) {
-    .nav {
-        width: 50%;
-    }
-}
 
 
 .header__buttons .button {
