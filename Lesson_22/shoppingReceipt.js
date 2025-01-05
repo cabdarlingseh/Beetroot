@@ -44,7 +44,6 @@ const shoppingReceipt = [{
 ];
 
 function printReceipt() {
-    // const sortingProducts = shoppingReceipt.sort((a, b) => a.productName - b.productName);
 
     console.log('------------------------------Shopping Receipt---------------------------');
 
