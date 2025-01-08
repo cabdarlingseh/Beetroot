@@ -66,12 +66,13 @@ function displayClassroomsByFaculty(rooms) {
 
 function findSuitableClassrooms(group) {
     const suitableGroup = classrooms.filter((groupName) => {
-        return groupName.seats >= group.students && groupName.faculty === group;
+        return groupName.seats >= group.students && groupName.faculty === group.faculty;
     });
     console.log('------------------------------------------')
     if (suitableGroup.length === 0) {
         console.log('There are no suitable classroom for this group.');
     } else {
+        console.log('Suitable Classroom:')
         suitableGroup.forEach((group) => {
             console.log(`Name: ${group.room}, Seats: ${group.seats}, Faculty: ${group.faculty}`);
         });
