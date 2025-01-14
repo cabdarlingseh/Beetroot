@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Weather App</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="search_bar">
+                <input type="text" name="city" id="city" placeholder="Enter City Name">
+                <button class="button" onclick="searchWeather()">Search</button>
+            </div>
+        </header>
+        <div class="weather_card">
+            <div class="weather_elements">
+                <p class="cityName"></p>
+                <p class="temperature"></p>
+                <p class="conditions"></p>
+                <p class="feelslike"></p>
+                <p class="humidity"></p>
+                <p class="max_temp"></p>
+                <p class="min_temp"></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

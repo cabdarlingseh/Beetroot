@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Merriweather",
+        serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    transition: background 0.5s ease;
+    color: #fff;
+    background-image: url(./images/sunny.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.clear-sky {
+    background-image: url(./images/clear_sky.jpg);
+}
+
+.clouds {
+    background-image: url(./images/cloudy_sky.jpg);
+}
+
+.thunder {
+    background-image: url(./images/thunderstorm.jpg);
+}
+
+.drizzle {
+    background-image: url(./images/drizzle.jpg);
+}
+
+.rain {
+    background-image: url(./images/rain.jpg);
+}
+
+.snow {
+    background-image: url(./images/snow.jpg);
+}
+
+.fog {
+    background-image: url(./images/fog.jpg);
+}
+
+.default {
+    background-image: url(./images/sunny.jpg);
+}
+
+.container {
+    width: 100%;
+}
+
+.search_bar {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    flex-direction: column;
+
+    input {
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto 20px;
+        padding: 20px;
+        text-align: center;
+        font-size: 22px;
+        outline: none;
+    }
+
+    button {
+        width: 100%;
+        max-width: 100px;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 4px;
+        border: none;
+    }
+}
+
+.weather_card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 450px;
+    display: none;
+}
