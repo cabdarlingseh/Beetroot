@@ -17,19 +17,30 @@
     <div class="container">
         <header>
             <div class="search_bar">
-                <input type="text" name="city" id="city" placeholder="Enter City Name">
+                <label for="city_search" class="city_search">
+                    <input type="text" name="city" id="city" placeholder="Enter the city name">
+                    <span class="label_focus"></span>
+                </label>
+
                 <button class="button" onclick="searchWeather()">Search</button>
             </div>
         </header>
         <div class="weather_card">
             <div class="weather_elements">
-                <p class="cityName"></p>
-                <p class="temperature"></p>
-                <p class="conditions"></p>
-                <p class="feelslike"></p>
-                <p class="humidity"></p>
-                <p class="max_temp"></p>
-                <p class="min_temp"></p>
+                <div class="top_tier">
+                    <h2 class="cityName"></h2>
+                    <p class="temperature"></p>
+                    <img alt="Weather Icon" src="" class="weather_icon">
+
+                    <p class="conditions"></p>
+                </div>
+                <div class="bottom_tier">
+                    <p class="feelslike"></p>
+                    <p class="humidity"></p>
+
+                    <p class="max_temp"></p>
+                    <p class="min_temp"></p>
+                </div>
             </div>
         </div>
     </div>
