@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 50px;
+    font-size: 24px;
+    font-family: "Space Grotesk",
+        serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text_container {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #a51f1f;
+    color: #fffcfd;
+    border: 3px solid #1c7d0b;
+}
+
+p {
+    text-align: left;
+}
+
+.text_area {
+    margin: 30px auto;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #a51f1f;
+    color: #fffcfd;
+    border: 3px solid #1c7d0b;
+    outline: none;
+    text-align: left;
+    direction: ltr;
+    resize: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+        border: 3px solid red;
+        padding: 12px 15px;
+        text-align: center;
+    }
+
+    th {
+        cursor: pointer;
+        position: relative;
+        color: #d0f3ca;
+        background-color: #a51f1f;
+
+        &:hover {
+            background-color: #ec6060;
+        }
+    }
+}
+
+.sorting_tables h2 {
+    margin-top: 20px;
+}
+
+#sortableTables {
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+#sortableTables th.ascending::after {
+    content: " ▲";
+    font-size: 25px;
+    color: #fff;
+}
+
+#sortableTables th.descending::after {
+    content: " ▼";
+    font-size: 25px;
+    color: #fff;
+}
+
+
+#sortableTables th.ascending,
+#sortableTables th.descending {
+    background-color: #e60000;
+}
+
+td:hover {
+    background-color: #ca6666;
+}
+
+.resizable {
+    width: 500px;
+    height: 250px;
+    border: 3px solid #e60000;
+    padding: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+    resize: both;
+    position: relative;
+
+    textarea {
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        resize: none;
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+    }
+}
+
+.resizing {
+    border: 2px dashed #007bff;
+    /* Add a visual effect for resizing */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    /* Optional shadow */
+}
+
+.resize {
+    width: 15px;
+    height: 15px;
+    background-color: #a51f1f;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: se-resize;
+}

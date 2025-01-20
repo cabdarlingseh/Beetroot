@@ -93,7 +93,7 @@ function getWeatherConditions(cityName) {
     fetch(URL)
         .then(res => res.json())
         .then(response => {
-            const mainWeather = response?.list[0].weather[0].main.toLowerCase();
+            const mainWeather = response?.list[0]?.weather[0]?.main?.toLowerCase();
 
             changeBackground(mainWeather);
             // console.log(mainWeather);

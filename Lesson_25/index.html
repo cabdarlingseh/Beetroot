@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework on events</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h2>Editing and Saving</h2>
+    <div class="text_container">
+        <div class="displayed_text">
+            <p>This is where the magic happens. Press Ctrl + E for Magic.</p>
+        </div>
+        <textarea dir="ltr" id="edited_text" class="text_area"></textarea>
+    </div>
+    <div class="sorting_tables">
+        <h2>Sorting Tables</h2>
+        <table id="sortableTables">
+            <thead>
+                <tr>
+                    <th data-type="string">Name</th>
+                    <th data-type="number">Age</th>
+                    <th data-type="string">Country</th>
+                    <th data-type="number">Points Scored</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div>
+        <h2>Resizable Text Block</h2>
+        <div class="resizable">
+            <textarea placeholder="The Resizable Textarea"></textarea>
+            <div class="resize"></div>
+        </div>
+    </div>
+
+    <script src="./textArea.js"></script>
+    <script src="./sorting.js"></script>
+    <script src="./resizing.js"></script>
+</body>
+
+</html>
