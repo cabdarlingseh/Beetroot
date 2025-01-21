@@ -3,3 +3,4 @@
 */*.dev.js
 package-lock.json
 package.json
+.vscode/settings.json
