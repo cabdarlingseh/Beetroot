@@ -3,3 +3,259 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: "Macondo", serif;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(45deg, #03071E, #9D0208, #E85D04, #FAA307);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+h1 {
+  text-align: center;
+  margin: 20px;
+  font-weight: 900;
+  font-size: 48px;
+  color: #370617;
+}
+h1 .h1_color {
+  color: #fff;
+}
+
+.search_bar {
+  display: flex;
+  justify-content: center;
+  margin: 45px;
+  flex-direction: column;
+}
+.search_bar input {
+  appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 16px 12px 12px 12px;
+  height: 60px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  background: rgba(0, 0, 0, 0.02);
+  box-shadow: inset 0 -1px 0 rgba(55, 6, 23, 0.6);
+  color: #fff;
+  transition: all 0.15s ease;
+  text-transform: capitalize;
+}
+.search_bar input:hover {
+  background: rgba(0, 0, 0, 0.04);
+  box-shadow: inset 0 -1px 0 rgba(55, 6, 23, 0.5);
+}
+.search_bar input:focus {
+  background: rgba(0, 0, 0, 0.1);
+  outline: none;
+  box-shadow: inset 0px 0px 1px 1px #D00000;
+}
+.search_bar input::placeholder {
+  color: #fff;
+}
+.search_bar input:focus::placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+.search_bar input:focus + .label_focus {
+  transform: scaleX(1);
+  transition: all 0.1s ease;
+}
+
+button {
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: 2px solid #03071E;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 3.5px;
+  font-family: inherit;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E85D04;
+  border-radius: 4px;
+  z-index: -2;
+}
+button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #6b2b02;
+  transition: all 0.3s;
+  border-radius: 4px;
+  z-index: -1;
+}
+button:hover {
+  color: #fff;
+}
+button:hover:before {
+  width: 100%;
+}
+
+.city_search {
+  position: relative;
+  margin: auto auto 20px;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.label_focus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+#clock_wall {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.clock {
+  background-color: #03071E;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(3, 7, 30, 0.1);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+.clock button {
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.clock .delete_button:after {
+  background-color: #D00000;
+}
+.clock .delete_button:hover {
+  background-color: #a71d2a;
+}
+
+.city_name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #FFBA08;
+}
+.city_name:hover {
+  color: #D00000;
+}
+
+.date_display,
+.time_display {
+  font-size: 16px;
+  margin: 5px 0;
+  display: none;
+  color: #FFBA08;
+}
+.date_display:hover,
+.time_display:hover {
+  color: #D00000;
+}
+
+.clock_face,
+.date_display,
+.time_display {
+  display: none;
+}
+
+.clock_face {
+  display: none;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  background-color: #FAA307;
+}
+
+.hour_hand,
+.minute_hand,
+.second_hand {
+  position: absolute;
+  background-color: #370617;
+  transform-origin: 50% 100%;
+  transition: transform 0.5s cubic-bezier(0.4, 2.3, 0.6, 1);
+}
+
+.hour_hand {
+  width: 5px;
+  height: 30px;
+  top: 70px;
+  left: 90px;
+}
+
+.minute_hand {
+  width: 4px;
+  height: 40px;
+  top: 60px;
+  left: 91.5px;
+}
+
+.second_hand {
+  width: 3px;
+  height: 45px;
+  top: 56px;
+  left: 90px;
+  background-color: #D00000;
+  transition: transform 0.5s cubic-bezier(0.4, 2.3, 0.6, 1);
+}
+
+.clock.show-clock .clock_face,
+.clock.show-clock .date_display,
+.clock.show-clock .time_display {
+  display: none;
+}

@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clocks</title>
     <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Clocks Dashboard</h1>
+    <h1>Clocks <span class="h1_color">Dashboard</span> </h1>
     <div>
-        <input type="text" id="city" placeholder="Enter the city name">
-        <button id="add_clock">Add new clock</button>
+        <div class="search_bar">
+            <label for="city_search" class="city_search">
+                <input type="text" id="city" placeholder="Enter the city name">
+                <span class="label_focus"></span>
+            </label>
+            <button id="add_clock">Add new clock</button>
+        </div>
     </div>
     <div class="world_clocks" id="clock_wall"></div>
     <script src="./clocks.js"></script>
