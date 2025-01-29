@@ -11,7 +11,7 @@ body {
     font-style: normal;
     background-color: #2B3040;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .container {
@@ -27,4 +27,209 @@ body {
         max-width: 1000px;
         height: 860px;
     }
+}
+
+.main_box {
+    width: 100%;
+    max-width: 600px;
+    height: 552px;
+    background-color: #212534;
+    margin: 154px 200px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(41, 45, 62, .8);
+    padding: 1px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.tabs {
+    width: 100%;
+    min-height: 120px;
+    background-color: #2b3040;
+    display: flex;
+
+    .tab_button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+        align-items: center;
+        color: #8D91A3;
+        background-color: #2b3040;
+        padding: 28px 0;
+        transition: background-color 0.3s;
+
+        &.active {
+            color: #fff;
+        }
+    }
+
+    img {
+        width: 24px;
+        height: 22px;
+        margin-bottom: 15px;
+    }
+
+    p {
+
+        text-transform: uppercase;
+        line-height: 28px;
+        font-size: 16px;
+    }
+}
+
+
+.tab_button img,
+.tab_button p {
+    transition: filter 0.3s, color 0.3s;
+}
+
+.tab_button.active img {
+    filter: brightness(0) invert(1);
+}
+
+.tab_button:not(.active) img {
+    filter: brightness(0) invert(1) !important;
+
+}
+
+.tab_button.active p {
+    color: #fff;
+}
+
+.tab_button:not(.active) p {
+    color: #8d91a3;
+}
+
+.tabcontent {
+    display: block;
+    color: #fff;
+    min-height: 432px;
+    display: flex;
+}
+
+.image_container {
+    display: flex;
+    flex-direction: column;
+    margin: 78.5px 40px;
+
+    img {
+        width: 160px;
+        height: 230px;
+    }
+}
+
+.star_ratings {
+    height: 20px;
+    width: 100%;
+    max-width: 140px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+
+    i {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+}
+
+.game_info {
+    margin-top: 60px;
+    margin-bottom: 50px;
+
+
+    .main_game_info {
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        line-height: 32px;
+        font-size: 32px;
+        margin-bottom: 15px;
+        font-family: inherit;
+        font-weight: 400;
+    }
+
+    h3 {
+        line-height: 20px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    p {
+        color: #B7BACD;
+        line-height: 22px;
+        font-size: 14px;
+        max-width: 277px;
+    }
+}
+
+
+.game_price {
+    display: flex;
+    width: 100%;
+    max-width: 306px;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+
+    .price_info {
+
+        .discount_info {
+            color: #FFDD3F;
+            line-height: 20px;
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        .actual_price {
+            line-height: 32px;
+            color: #fff;
+            font-size: 32px;
+            font-weight: 400;
+        }
+    }
+
+    .buy_section {
+        width: 100%;
+        max-width: 155px;
+        height: 60px;
+
+        button {
+            width: 100%;
+            height: 60px;
+            background-color: #13E28D;
+            color: #fff;
+            text-transform: uppercase;
+            line-height: 20px;
+            font-size: 16px;
+            font-weight: 400;
+            transition: 0.3s ease;
+            cursor: pointer;
+
+            &:hover {
+                color: #0e0d0d;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.image_container.ratings_tab {
+    margin: 60px auto;
+}
+
+
+
+.game_price.where_to_buy_tab {
+    margin: 160px auto;
 }

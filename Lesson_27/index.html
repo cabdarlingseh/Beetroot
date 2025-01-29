@@ -10,13 +10,113 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0bee8dce34.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./main.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="background_image"></div>
+        <div class="background_image">
+
+            <div class="overlay">
+                <div class="main_box">
+
+                    <div class="tabs">
+
+                        <button class="tab_button" data-type="first_tab">
+                            <img src="./images/info-icon.svg" alt="Information Icon">
+                            <p>Information</p>
+                        </button>
+
+                        <button class="tab_button" data-type="second_tab"><img src="./images/spades-icon.svg"
+                                alt="Spades Icon">
+                            <p>Ratings Info</p>
+                        </button>
+
+                        <button class="tab_button" data-type="third_tab"><img src="./images/bag-icon.svg"
+                                alt="Bag Icon">
+                            <p>Where to buy</p>
+                        </button>
+
+                    </div>
+
+                    <div id="first_tab" class="tabcontent">
+                        <div class="image_container">
+                            <img src="./images/cover_image.jpg" alt="FarCry 6">
+                            <div class="star_ratings">
+                                <i class="fa-solid fa-star" aria-hidden="true" id="st1"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true" id="st2"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true" id="st3"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true" id="st4"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true" id="st5"></i>
+                            </div>
+                        </div>
+                        <div class="details_container">
+                            <div class="game_info">
+                                <div class="main_game_info">
+                                    <div class="main_game_info_text">
+                                        <h2>FarCry 6</h2>
+                                        <h3>First Released Oct 6, 2021</h3>
+                                    </div>
+                                    <div class="rating">
+
+                                    </div>
+                                </div>
+
+                                <p>Far Cry 6 is a 2021 action-adventure first-person shooter game developed by
+                                    Ubisoft Toronto. It is the sixth main
+                                    installment in the Far Cry series and the successor Far Cry 5.
+                                </p>
+                            </div>
+                            <div class="game_price">
+                                <div class="price_info">
+                                    <p class="discount_info">20% OFF!</p>
+                                    <p class="actual_price">$59.96</p>
+                                </div>
+                                <div class="buy_section">
+                                    <button class="buy_button">Buy it now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="second_tab" class="tabcontent">
+
+                        <div class="image_container ratings_tab">
+                            <img src="./images/cover_image.jpg" alt="FarCry 6">
+                            <div class="star_ratings">
+                                <i class="fa-solid fa-star" aria-hidden="true" id="st11"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true" id="st12"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true" id="st13"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true" id="st14"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true" id="st15"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="third_tab" class="tabcontent">
+                        <div class="game_price where_to_buy_tab">
+                            <div class="price_info">
+                                <p class="discount_info">20% OFF!</p>
+                                <p class="actual_price">$59.96</p>
+                            </div>
+                            <div class="buy_section">
+                                <button class="buy_button">Buy it now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="./main.js"></script>
 </body>
 
