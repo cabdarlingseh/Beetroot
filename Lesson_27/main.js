@@ -16,6 +16,19 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+    $(".rating").circleProgress({
+        value: 8.7 / 10, // Convert 8.7 to a scale of 1
+        size: 75,
+        thickness: 4,
+        startAngle: -Math.PI / 2,
+        fill: {
+            color: "#14E098"
+        },
+        emptyFill: "#8D91A3"
+    });
+});
+
+$(document).ready(function () {
     $("#st1").hover(function () {
         $(".fa-star").css("color", "#8D91A3");
         $("#st1").css("color", "#FFDD3F");

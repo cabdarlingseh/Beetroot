@@ -137,6 +137,8 @@ button {
 }
 .game_info .main_game_info {
   margin-bottom: 40px;
+  display: flex;
+  gap: 60px;
 }
 .game_info h2 {
   line-height: 32px;
@@ -155,6 +157,32 @@ button {
   line-height: 22px;
   font-size: 14px;
   max-width: 277px;
+}
+
+.rating {
+  width: 75px;
+  height: 75px;
+  position: relative;
+}
+.rating canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.rating .rating_value {
+  position: absolute;
+  width: 100%;
+  top: 52%;
+  left: 84%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #9C92A3;
+}
+.rating .rating_value p {
+  color: #B7BACD;
+  line-height: 22px;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .game_price {
@@ -176,6 +204,9 @@ button {
   color: #fff;
   font-size: 32px;
   font-weight: 400;
+}
+.game_price .price_info .actual_price:hover {
+  color: #d00000;
 }
 .game_price .buy_section {
   width: 100%;

@@ -78,13 +78,11 @@ button {
     }
 
     p {
-
         text-transform: uppercase;
         line-height: 28px;
         font-size: 16px;
     }
 }
-
 
 .tab_button img,
 .tab_button p {
@@ -97,7 +95,6 @@ button {
 
 .tab_button:not(.active) img {
     filter: brightness(0) invert(1) !important;
-
 }
 
 .tab_button.active p {
@@ -146,9 +143,10 @@ button {
     margin-top: 60px;
     margin-bottom: 50px;
 
-
     .main_game_info {
         margin-bottom: 40px;
+        display: flex;
+        gap: 60px;
     }
 
     h2 {
@@ -173,6 +171,34 @@ button {
     }
 }
 
+.rating {
+    width: 75px;
+    height: 75px;
+    position: relative;
+
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .rating_value {
+        position: absolute;
+        width: 100%;
+        top: 52%;
+        left: 84%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        color: #9C92A3;
+
+        p {
+            color: #B7BACD;
+            line-height: 22px;
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+}
 
 .game_price {
     display: flex;
@@ -183,7 +209,6 @@ button {
     justify-content: space-between;
 
     .price_info {
-
         .discount_info {
             color: #FFDD3F;
             line-height: 20px;
@@ -196,6 +221,10 @@ button {
             color: #fff;
             font-size: 32px;
             font-weight: 400;
+
+            &:hover {
+                color: #d00000;
+            }
         }
     }
 
@@ -227,8 +256,6 @@ button {
 .image_container.ratings_tab {
     margin: 60px auto;
 }
-
-
 
 .game_price.where_to_buy_tab {
     margin: 160px auto;
