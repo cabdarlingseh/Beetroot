@@ -13,9 +13,7 @@ $(document).ready(function () {
     });
 
     $('.tab_button').first().click();
-});
 
-$(document).ready(function () {
     $(".rating").circleProgress({
         value: 8.7 / 10, // Convert 8.7 to a scale of 1
         size: 75,
@@ -26,9 +24,7 @@ $(document).ready(function () {
         },
         emptyFill: "#8D91A3"
     });
-});
 
-$(document).ready(function () {
     $("#st1").hover(function () {
         $(".fa-star").css("color", "#8D91A3");
         $("#st1").css("color", "#FFDD3F");
@@ -52,11 +48,8 @@ $(document).ready(function () {
     $("#st5").hover(function () {
         $(".fa-star").css("color", "#8D91A3");
         $("#st1, #st2, #st3, #st4, #st5").css("color", "#FFDD3F");
-
     });
-});
 
-$(document).ready(function () {
     $("#st11").hover(function () {
         $(".fa-star").css("color", "#8D91A3");
         $("#st11").css("color", "#FFDD3F");
