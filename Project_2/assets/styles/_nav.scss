@@ -1,6 +1,40 @@
 @import '../styles/vars';
 
+
 nav {
     font-family: "Source Sans 3",
         serif;
+    max-width: 515px;
+    height: 18px;
+    width: 100%;
+
+    .header_menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    a {
+        display: flex;
+        align-items: baseline;
+        cursor: pointer;
+
+    }
+
+    li {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: $font_size_1;
+        align-items: center;
+        // max-width: 61px;
+        // min-height: 18px;
+    }
+
+    .list_dot_icon {
+        border: 1px solid $primary-color;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        margin-right: 14px;
+    }
 }

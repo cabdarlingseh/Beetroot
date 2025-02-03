@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", serif;
+  color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/first_section_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  padding: 53px 215px 0;
+}
+
+.header_container {
+  width: 100%;
+  max-width: 1170px;
+  min-height: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  max-width: 241px;
+  width: 100%;
+  margin-right: 144px;
+}
+
+nav {
+  font-family: "Source Sans 3", serif;
+  max-width: 515px;
+  height: 18px;
+  width: 100%;
+}
+nav .header_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  display: flex;
+  align-items: baseline;
+  cursor: pointer;
+}
+nav li {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  align-items: center;
+}
+nav .list_dot_icon {
+  border: 1px solid #fff;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-right: 14px;
+}
