@@ -171,10 +171,11 @@ button {
 
 #clock_wall {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
     gap: 20px;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .clock {
