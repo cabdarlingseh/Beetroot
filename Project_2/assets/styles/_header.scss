@@ -25,3 +25,43 @@ header {
     width: 100%;
     margin-right: 144px;
 }
+
+.header_body {
+    width: 100%;
+    max-width: 917px;
+    margin: 223px 127px 0;
+
+    .slider_heading {
+        text-align: center;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-weight: bold;
+            font-size: $font_size_6;
+            letter-spacing: 10%;
+            margin-bottom: 20px;
+            min-height: 98px;
+        }
+
+        h3 {
+            font-weight: 400;
+            letter-spacing: 30%;
+            font-size: $font_size_3;
+            min-height: 22px;
+        }
+
+        .slick-dots {
+            position: fixed !important;
+            top: 50% !important;
+            right: 20px !important;
+            transform: translateY(-50%);
+            display: flex !important;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}

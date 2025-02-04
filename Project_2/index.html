@@ -5,54 +5,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Montecito</title>
+
+    <!-- Page Icon -->
+
+    <link rel="icon" href="./assets/images/mini_icon.png" type="image/png">
+
+    <!-- Page Styles and Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="./assets/images/mini_icon.png" type="image/png">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./assets/styles/main.css">
+
     <script src="https://kit.fontawesome.com/0bee8dce34.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Sliders Library -->
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- Main Style  -->
+
+    <link rel="stylesheet" href="./assets/styles/main.css">
 
 </head>
 
 <body>
 
     <div class="container">
+
+        <!-- First Section -->
+
         <header>
             <div class="header_container">
                 <a href="#" class="header_logo">
                     <img src="./assets/images/main_logo.svg" alt="Montecito logo">
                 </a>
 
+                <!-- Navigation Menus -->
+
                 <nav class="header_nav">
                     <ul class="header_menu">
-                        <li><a href="#">
-                                <div class="list_dot_icon"></div>About us
+                        <li><a href="#">About us
                             </a></li>
-                        <li><a href="#">
-                                <div class="list_dot_icon"></div>Projects
+                        <li><a href="#">Projects
                             </a></li>
-                        <li><a href="#">
-                                <div class="list_dot_icon"></div>News
+                        <li><a href="#">News
                             </a></li>
-                        <li><a href="#">
-                                <div class="list_dot_icon"></div>Contact
+                        <li><a href="#">Contact
                             </a></li>
                     </ul>
                 </nav>
 
+                <!-- Social Icons -->
+
                 <div class="header_icons">
                     <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F" target="_blank"><i
-                            class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            class="fa-brands fa-facebook-f social_icons"></i></a>
+                    <a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter social_icons"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i
+                            class="fa-brands fa-instagram social_icons"></i></a>
+                </div>
+            </div>
+
+            <!-- Slider Headings of the Page -->
+
+            <div class="header_body">
+                <div class="slider_heading">
+                    <h2>SIMPLE & MODERN</h2>
+                    <h3>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
+                </div>
+                <div class="slider_heading">
+                    <h2>Clean & Minimal</h2>
+                    <h3>WE CRAFT DESIGNS THAT SPEAK VOLUMES SILENTLY</h3>
+                </div>
+                <div class="slider_heading">
+                    <h2>Innovative & Reliable</h2>
+                    <h3>WE BUILD FUTURES THAT STAND THE TEST OF TIME</h3>
+                </div>
+                <div class="slider_heading">
+                    <h2>Creative & Visionary</h2>
+                    <h3>WE TURN IDEAS INTO MASTERPIECES EVERY DAY</h3>
+                </div>
+                <div class="slider_heading">
+                    <h2>Classic & Refined</h2>
+                    <h3>WE SHAPE ELEGANCE THAT LASTS FOR GENERATIONS</h3>
                 </div>
             </div>
         </header>
+        <main></main>
+        <footer></footer>
 
     </div>
+
+    <!-- JQuery CDNs and Other Libraries Link -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Main JavaScript Code -->
 
     <script src="./main.js"></script>
 </body>
