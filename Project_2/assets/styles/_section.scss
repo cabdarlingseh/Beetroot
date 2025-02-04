@@ -1,1 +1,54 @@
 @import '../styles/vars';
+
+.what_we_do {
+    background-color: $primary-color;
+    width: 100%;
+    height: 1367px;
+
+}
+
+.what_we_do_title {
+    width: 100%;
+    max-width: 324px;
+    height: 84px;
+    margin: 0 auto;
+
+    hr {
+        border: 0;
+        height: 1px;
+        background-color: $secondary-color;
+        width: 100px;
+        display: block;
+        margin: 99px auto 0;
+    }
+
+    h2 {
+        font-size: $font_size_5;
+        font-weight: bold;
+        text-align: center;
+        color: $secondary-color;
+        margin-top: 30px;
+        text-transform: uppercase;
+    }
+}
+
+.projects {
+    margin-top: 89px;
+}
+
+.project_1,
+.project_2 {
+    width: 100%;
+    max-width: 1385px;
+    height: 527px;
+
+}
+
+.project_1 {
+    margin-right: 215px;
+    margin-bottom: 140px;
+}
+
+.project_2 {
+    margin-left: 215px;
+}

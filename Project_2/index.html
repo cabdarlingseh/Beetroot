@@ -21,13 +21,17 @@
 
     <script src="https://kit.fontawesome.com/0bee8dce34.js" crossorigin="anonymous"></script>
 
-    <!-- Sliders Library -->
+    <!-- JQuery CDN -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Slick Carousel CSS and JS -->
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <!-- Main Style  -->
+    <!-- Custom Style Sheet -->
 
     <link rel="stylesheet" href="./assets/styles/main.css">
 
@@ -39,7 +43,7 @@
 
         <!-- First Section -->
 
-        <header>
+        <header id="about_us">
             <div class="header_container">
                 <a href="#" class="header_logo">
                     <img src="./assets/images/main_logo.svg" alt="Montecito logo">
@@ -49,9 +53,9 @@
 
                 <nav class="header_nav">
                     <ul class="header_menu">
-                        <li><a href="#">About us
+                        <li><a href="#about_us">About us
                             </a></li>
-                        <li><a href="#">Projects
+                        <li><a href="#projects">Projects
                             </a></li>
                         <li><a href="#">News
                             </a></li>
@@ -95,17 +99,50 @@
                     <h3>WE SHAPE ELEGANCE THAT LASTS FOR GENERATIONS</h3>
                 </div>
             </div>
+            <div class="pointer_down">
+                <a href="#"><i class="fa-solid fa-chevron-down"></i></a>
+            </div>
         </header>
-        <main></main>
+        <main>
+            <!-- What we do section -->
+
+            <section id="projects">
+                <div class="what_we_do">
+                    <div class="what_we_do_title">
+                        <hr>
+                        <h2>What we do</h2>
+                    </div>
+
+                    <!-- Projects -->
+
+                    <div class="projects">
+
+                        <!-- Project 1 -->
+
+                        <div class="project_1">
+                            <div class="project_1_image">
+                                <img src="./assets/images/trade_center.jpg" alt="Trade Center">
+                            </div>
+                            <div class="project_1_details"></div>
+                        </div>
+
+                        <!-- Project 2 -->
+
+                        <div class="project_2">
+                            <div class="project_2_image">
+                                <img src="./assets/images/commerce_center.jpg" alt="Commerce Center">
+                            </div>
+                            <div class="project_2_details"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
         <footer></footer>
 
     </div>
 
-    <!-- JQuery CDNs and Other Libraries Link -->
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <!-- Main JavaScript Code -->
 
