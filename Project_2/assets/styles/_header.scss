@@ -2,7 +2,7 @@
 
 header {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     background-image: url('../images/first_section_background.jpg');
     background-size: cover;
     background-position: center;
@@ -13,29 +13,58 @@ header {
 
 .header_container {
     width: 100%;
-    max-width: 1170px;
+    // max-width: 1170px;
     min-height: 54px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.title_bar {
+    width: 100%;
     margin: 0 auto;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    padding-top: 53px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+
+    &.scrolled {
+        background: linear-gradient(360deg, $tertiary-color 0%, $secondary-color 50%, $commerce_background 100%);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        padding-top: 0;
+    }
 }
 
 .header_logo {
     max-width: 241px;
     width: 100%;
     margin-right: 144px;
+
+    img {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover img {
+        transform: scale(1.1);
+    }
 }
 
 .header_body {
     width: 100%;
-    max-width: 917px;
+    // max-width: 917px;
     margin: 223px 127px 0;
     position: relative;
+    top: 5%;
+    right: 9%;
 
     .slider_heading {
         text-align: center;
-        display: flex !important;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -43,7 +72,6 @@ header {
         h2 {
             font-weight: bold;
             font-size: $font_size_6;
-            letter-spacing: 10%;
             margin-bottom: 20px;
             min-height: 98px;
         }
@@ -57,6 +85,13 @@ header {
         }
     }
 }
+
+// .slider_contents {
+//     padding: 330px 0 240px 0;
+//     margin: 0 auto;
+//     width: 100%;
+//     height: 100%;
+// }
 
 .slick-dots {
     position: fixed;
@@ -92,6 +127,8 @@ header {
 }
 
 .pointer_down {
+    margin-bottom: 50px;
+
     a {
         text-decoration: none;
         border-radius: 50%;

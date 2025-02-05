@@ -6,7 +6,6 @@
     height: 1367px;
     max-width: 1170px;
     margin: 0 auto;
-
 }
 
 .what_we_do_title {
@@ -62,8 +61,6 @@
     .project_image {
         width: 100%;
         height: 100%;
-
-
     }
 }
 
@@ -169,7 +166,6 @@
             font-style: italic;
         }
     }
-
 }
 
 .project_2 {
@@ -180,4 +176,8 @@
     img {
         box-shadow: 260px -57px $commerce_background;
     }
+}
+
+.news_section {
+    background: (230deg, #24ccfa 0%, #3c7fd4 100%);
 }
