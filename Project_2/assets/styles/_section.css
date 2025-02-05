@@ -1,7 +1,9 @@
 .what_we_do {
   background-color: #fff;
-  width: 100%;
+  width: 90%;
   height: 1367px;
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
 .what_we_do_title {
@@ -30,6 +32,12 @@
 .projects {
   margin-top: 89px;
 }
+.projects img {
+  position: relative;
+  z-index: 10;
+  vertical-align: top;
+  box-shadow: -260px -57px #55B7FF;
+}
 
 .project_1,
 .project_2 {
@@ -41,8 +49,109 @@
 .project_1 {
   margin-right: 215px;
   margin-bottom: 140px;
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+.project_1 .project_image {
+  width: 100%;
+  height: 100%;
+}
+
+.project_details {
+  padding-top: 85px;
+  padding-bottom: 25px;
+  width: 100%;
+}
+.project_details h3 {
+  font-size: 22px;
+  color: #2C4058;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.project_details h2 {
+  font-size: 44px;
+  color: #2C4058;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.project_details p {
+  font-size: 18px;
+  color: #2C4058;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: "Source Sans 3", serif;
+  margin-top: 19px;
+  letter-spacing: 1px;
+}
+.project_details button {
+  margin-top: 41px;
+  width: 100%;
+  max-width: 190px;
+  height: 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 1px solid #2C4058;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 16px 41px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+}
+.project_details button:hover {
+  background: #55B7FF;
+  border-color: #55B7FF;
+  color: #2C4058;
+  box-shadow: 0px 0px 15px rgba(85, 183, 255, 0.6);
+}
+.project_details button:active {
+  transform: scale(0.95);
+  background: #d00000;
+  border-color: #d00000;
+  box-shadow: 0px 0px 15px rgba(208, 0, 0, 0.6);
+}
+.project_details button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 80%);
+  transition: all 0.5s ease-in-out;
+  transform: translate(-50%, -50%) scale(0);
+}
+.project_details button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+.project_details .coordinates {
+  margin-top: 60px;
+}
+.project_details .coordinates i {
+  font-size: 15px;
+  color: #2C4058;
+  margin-right: 10px;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.project_details .coordinates i:hover {
+  color: #d00000;
+  transform: scale(1.2);
+}
+.project_details .coordinates a {
+  color: #2C4058;
+  font-family: "Source Sans 3", serif;
+  font-size: 15px;
+  font-style: italic;
 }
 
 .project_2 {
-  margin-left: 215px;
+  display: flex;
+  justify-content: space-between;
+  gap: 64px;
+}
+.project_2 img {
+  box-shadow: 260px -57px #7E5AFF;
 }
