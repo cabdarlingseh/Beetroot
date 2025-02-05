@@ -1,7 +1,10 @@
+#projects {
+  margin-bottom: 100px;
+}
+
 .what_we_do {
   background-color: #fff;
   width: 90%;
-  height: 1367px;
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -13,18 +16,13 @@
   margin: 0 auto;
 }
 .what_we_do_title hr {
-  border: 0;
-  height: 1px;
-  background-color: #2C4058;
-  width: 100px;
-  display: block;
-  margin: 99px auto 0;
+  background-color: #2c4058;
 }
 .what_we_do_title h2 {
   font-size: 44px;
   font-weight: bold;
   text-align: center;
-  color: #2C4058;
+  color: #2c4058;
   margin-top: 30px;
   text-transform: uppercase;
 }
@@ -65,19 +63,19 @@
 }
 .project_details h3 {
   font-size: 22px;
-  color: #2C4058;
+  color: #2c4058;
   font-weight: 400;
   text-transform: uppercase;
 }
 .project_details h2 {
   font-size: 44px;
-  color: #2C4058;
+  color: #2c4058;
   font-weight: bold;
   text-transform: uppercase;
 }
 .project_details p {
   font-size: 18px;
-  color: #2C4058;
+  color: #2c4058;
   line-height: 30px;
   font-weight: 400;
   font-family: "Source Sans 3", serif;
@@ -91,7 +89,7 @@
   height: 50px;
   font-size: 14px;
   text-transform: uppercase;
-  border: 1px solid #2C4058;
+  border: 1px solid #2c4058;
   background-color: #fff;
   cursor: pointer;
   padding: 16px 41px;
@@ -104,7 +102,7 @@
 .project_details button:hover {
   background: #55B7FF;
   border-color: #55B7FF;
-  color: #2C4058;
+  color: #2c4058;
   box-shadow: 0px 0px 15px rgba(85, 183, 255, 0.6);
 }
 .project_details button:active {
@@ -132,7 +130,7 @@
 }
 .project_details .coordinates i {
   font-size: 15px;
-  color: #2C4058;
+  color: #2c4058;
   margin-right: 10px;
   transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
@@ -141,7 +139,7 @@
   transform: scale(1.2);
 }
 .project_details .coordinates a {
-  color: #2C4058;
+  color: #2c4058;
   font-family: "Source Sans 3", serif;
   font-size: 15px;
   font-style: italic;
@@ -157,5 +155,31 @@
 }
 
 .news_section {
-  background: 230deg, #24ccfa 0%, #3c7fd4 100%;
+  min-height: 1035px;
+  background: url("../images/news_background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.news_section_content {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.news_section_content .news_title {
+  width: 100%;
+  max-width: 327px;
+  height: 84px;
+  margin: 0 auto;
+}
+.news_section_content .news_title hr {
+  color: #fff;
+}
+.news_section_content .news_title h2 {
+  font-size: 44px;
+  font-weight: bold;
+  text-align: center;
 }

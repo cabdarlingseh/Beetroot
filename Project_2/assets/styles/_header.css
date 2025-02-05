@@ -4,8 +4,8 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0 auto;
   padding: 53px 215px 0;
+  margin-bottom: 100px;
 }
 
 .header_container {
@@ -107,6 +107,9 @@ header {
 
 .pointer_down {
   margin-bottom: 50px;
+  position: relative;
+  top: -40px;
+  left: 0px;
 }
 .pointer_down a {
   text-decoration: none;
