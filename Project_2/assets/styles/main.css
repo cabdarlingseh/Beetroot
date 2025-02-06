@@ -30,7 +30,6 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 53px 215px 0;
   margin-bottom: 100px;
 }
 
@@ -75,10 +74,7 @@ header {
 
 .header_body {
   width: 100%;
-  margin: 223px 127px 0;
-  position: relative;
-  top: 5%;
-  right: 9%;
+  margin-top: 223px;
 }
 .header_body .slider_heading {
   text-align: center;
@@ -103,7 +99,7 @@ header {
 .header_body .slick-dots {
   position: absolute;
   top: 25%;
-  right: -130px;
+  right: 50px;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
@@ -252,6 +248,7 @@ nav li:hover a::before {
   font-size: 16px;
   font-weight: 400;
   position: absolute;
+  text-align: center;
   top: 33%;
   left: 30%;
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -261,7 +258,7 @@ nav li:hover a::before {
   color: #1877F2;
   position: absolute;
   top: 32%;
-  left: 35%;
+  left: 28%;
 }
 
 .header_icons a:nth-child(2):hover i {
@@ -293,13 +290,14 @@ nav li:hover a::before {
 .what_we_do_title {
   width: 100%;
   max-width: 324px;
-  height: 84px;
   margin: 0 auto;
 }
-.what_we_do_title hr {
-  background-color: #2c4058;
+.what_we_do_title:before {
+  content: "";
+  display: block;
   width: 100px;
   margin: 0 auto;
+  border: 1px solid #2c4058;
 }
 .what_we_do_title h2 {
   font-size: 44px;
@@ -438,11 +436,10 @@ nav li:hover a::before {
 }
 
 #news {
-  margin-top: 40px;
+  padding-top: 40px;
 }
 
 .news_section {
-  min-height: 1035px;
   background: url("../images/news_background.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -462,16 +459,15 @@ nav li:hover a::before {
 .news_section_content .news_title {
   width: 100%;
   max-width: 327px;
-  height: 84px;
-  margin: 135px auto 0 auto;
+  padding-top: 135px;
   text-align: center;
 }
-.news_section_content .news_title hr {
-  border: none;
-  height: 1px;
-  background-color: #fff;
+.news_section_content .news_title:before {
+  content: "";
+  display: block;
   width: 100px;
   margin: 0 auto;
+  border: 1px solid #fff;
 }
 .news_section_content .news_title h2 {
   font-size: 44px;
@@ -513,6 +509,12 @@ nav li:hover a::before {
   border: 1px solid #fff;
   background-color: transparent;
 }
+.article .slick-next {
+  right: -85px;
+}
+.article .slick-prev {
+  left: -100px;
+}
 .article i {
   font-size: 14px;
   color: #fff;
@@ -533,7 +535,7 @@ nav li:hover a::before {
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  margin-right: 30px;
+  margin: 0 20px 0 15px;
 }
 .article_details img {
   width: 100%;

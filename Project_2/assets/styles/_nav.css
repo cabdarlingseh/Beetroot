@@ -83,6 +83,7 @@ nav li:hover a::before {
   font-size: 16px;
   font-weight: 400;
   position: absolute;
+  text-align: center;
   top: 33%;
   left: 30%;
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -92,7 +93,7 @@ nav li:hover a::before {
   color: #1877F2;
   position: absolute;
   top: 32%;
-  left: 35%;
+  left: 28%;
 }
 
 .header_icons a:nth-child(2):hover i {
