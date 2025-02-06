@@ -36,6 +36,8 @@ $(document).ready(function () {
         slidesToScroll: 3,
         dots: true,
         speed: 500,
+        nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-chevron-right"></i></button>',
+        prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-chevron-left"></i></button>'
     });
 })
 

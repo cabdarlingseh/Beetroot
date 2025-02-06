@@ -222,12 +222,49 @@
 }
 
 .article {
-    .slick-dots {
-        display: block !important;
-        position: relative;
-        bottom: 10px;
+    .slick-dots li button:before {
+        content: '';
+        color: transparent;
+        border: 1px solid $primary-color;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        opacity: 1;
     }
 
+    .slick-dots li.slick-active button:before {
+        background-color: $primary-color;
+        opacity: 1;
+    }
+
+    .slick-dots {
+        position: static;
+        margin-top: 60px;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        content: none;
+        display: none;
+    }
+
+    .slick-arrow {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid $primary-color;
+        background-color: transparent;
+    }
+
+    .slick-next {}
+
+    i {
+        font-size: $font_size_1;
+        color: $primary-color;
+    }
 }
 
 .carousel {
@@ -278,8 +315,8 @@
     .authors {
         display: flex;
         align-items: center;
-        justify-content: center;
-        margin: 0 164px 30px 20px;
+        margin: 0 115px 30px 20px;
+        white-space: nowrap;
 
         img {
             width: 100%;
