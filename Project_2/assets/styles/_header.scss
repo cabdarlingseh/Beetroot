@@ -85,47 +85,46 @@ header {
             margin-bottom: 240px;
         }
     }
-}
 
-// .slider_contents {
-//     padding: 330px 0 240px 0;
-//     margin: 0 auto;
-//     width: 100%;
-//     height: 100%;
-// }
-
-.slick-dots {
-    position: fixed;
-    top: 55%;
-    right: 25px;
-    transform: translateY(-50%);
-    display: flex !important;
-    flex-direction: column;
-    padding: 0;
-    margin: 0 15px 0 0;
+    .slick-dots {
+        position: absolute;
+        top: 25%;
+        right: -130px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0 15px 0 0;
+        width: 0;
+        bottom: 0;
 
 
-    li {
-        list-style: none;
-        margin: 10px 0;
+        li {
+            list-style: none;
+            margin: 10px 0;
 
-        button {
-            border-radius: 50%;
-            width: 10px;
-            height: 10px;
-            border: 2px solid $primary-color;
-            background-color: transparent;
-            text-indent: -9999px;
-            outline: none;
-            transition: background-color 0.3s ease;
+            button {
+                border-radius: 50%;
+                width: 10px;
+                height: 10px;
+                border: 1px solid $primary-color;
+                background-color: transparent;
+                text-indent: -9999px;
+                outline: none;
+                transition: background-color 0.3s ease;
+            }
         }
     }
+
+    .slick-dots button:hover,
+    .slick-dots .slick-active button {
+        background-color: $primary-color;
+    }
+
 }
 
-.slick-dots button:hover,
-.slick-dots .slick-active button {
-    background-color: $primary-color;
-}
+
+
 
 .pointer_down {
     margin-bottom: 50px;
@@ -160,8 +159,8 @@ header {
 
         i {
             position: absolute;
-            top: 32%;
-            left: 32%;
+            top: 35%;
+            left: 30%;
             font-size: $font_size_2;
         }
     }

@@ -1,13 +1,8 @@
 @import '../styles/vars';
 
-#projects {
-    margin-bottom: 100px;
-}
-
 .what_we_do {
     background-color: $primary-color;
     width: 90%;
-    // height: 1367px;
     max-width: 1170px;
     margin: 0 auto;
 }
@@ -20,6 +15,8 @@
 
     hr {
         background-color: $secondary-color;
+        width: 100px;
+        margin: 0 auto;
     }
 
     h2 {
@@ -177,6 +174,10 @@
     }
 }
 
+#news {
+    margin-top: 40px;
+}
+
 .news_section {
     min-height: 1035px;
     background: url('../images/news_background.jpg');
@@ -191,21 +192,120 @@
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
+    display: flex; // This is needed to make sure the margin starts at the correct place. 
+    flex-direction: column;
+    align-items: center;
 
     .news_title {
         width: 100%;
         max-width: 327px;
         height: 84px;
-        margin: 0 auto;
+        margin: 135px auto 0 auto; // This is the desired margin 
+        text-align: center;
 
         hr {
-            color: $primary-color
+            border: none;
+            height: 1px;
+            background-color: $primary-color;
+            width: 100px;
+            margin: 0 auto;
         }
 
         h2 {
             font-size: $font_size_5;
             font-weight: bold;
             text-align: center;
+            margin-top: 30px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.article {
+    .slick-dots {
+        display: block !important;
+        position: relative;
+        bottom: 10px;
+    }
+
+}
+
+.carousel {
+    margin: 89px auto 0;
+    width: 90%;
+    max-width: 1170px;
+}
+
+.article_details {
+    width: 100%;
+    max-width: 370px;
+    height: 514px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary-color;
+    margin-right: 30px;
+
+    img {
+        width: 100%;
+        height: 240px;
+    }
+
+    h2 {
+        margin: 30px 20px 15px;
+        color: $secondary-color;
+        font-weight: bold;
+        font-size: $font_size_4;
+    }
+
+    p {
+        margin: 0 20px 39px;
+        color: $secondary-color;
+        font-size: $font_size_3;
+        font-weight: 400;
+        font-family: "Source Sans 3",
+            serif;
+        letter-spacing: 0.5px;
+
+        &:nth-child(3) {
+            letter-spacing: 0.6px;
+        }
+    }
+
+
+
+    .authors {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 164px 30px 20px;
+
+        img {
+            width: 100%;
+            max-width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+
+        .author_details {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+
+            h3 {
+                color: $secondary-color;
+                font-weight: 400;
+                font-size: $font_size_3;
+                margin-bottom: 6px;
+            }
+
+            p {
+                color: $tertiary-color;
+                font-weight: 400;
+                font-size: $font_size_1;
+                margin: 0;
+            }
         }
     }
 }
