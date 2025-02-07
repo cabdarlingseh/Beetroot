@@ -37,7 +37,9 @@ $(document).ready(function () {
         dots: true,
         speed: 500,
         nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-chevron-right"></i></button>',
-        prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-chevron-left"></i></button>'
+        prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-chevron-left"></i></button>',
+        autoplay: true,
+        autoplaySpeed: 2000
     });
 })
 
@@ -129,3 +131,16 @@ for (let i = 0; i < additionalCardsNeeded; i++) {
     const article = articles[i % articles.length];
     main_container.appendChild(createCard(article));
 }
+
+// Lightgallery
+
+document.addEventListener('DOMContentLoaded', function () {
+    lightGallery(document.getElementById('lightgallery'), {
+        plugins: [lgThumbnail, lgZoom, lgFullscreen],
+        animateThumb: false,
+        zoomFromOrigin: false,
+        allowMediaOverlap: true,
+        toggleThumb: true,
+        showThumbByDefault: true
+    });
+});

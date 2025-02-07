@@ -180,13 +180,13 @@
 }
 
 .news_section {
-    // min-height: 1035px;
     background: url('../images/news_background.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
     width: 100%;
+    padding-bottom: 143px;
 }
 
 .news_section_content {
@@ -200,8 +200,6 @@
     .news_title {
         width: 100%;
         max-width: 327px;
-        // height: 84px;
-        // margin: 135px auto 0 auto; // This is the desired margin 
         padding-top: 135px;
         text-align: center;
 
@@ -225,7 +223,7 @@
 }
 
 .article {
-    .slick-dots li button:before {
+    .slick-dots li button::before {
         content: '';
         color: transparent;
         border: 1px solid $primary-color;
@@ -238,7 +236,13 @@
         opacity: 1;
     }
 
-    .slick-dots li.slick-active button:before {
+    .slick-dots li.slick-active button::before {
+        background-color: $primary-color;
+        opacity: 1;
+    }
+
+    // Very Tricky here
+    .slick-dots li button:hover::before {
         background-color: $primary-color;
         opacity: 1;
     }
@@ -268,6 +272,20 @@
 
     .slick-prev {
         left: -100px;
+    }
+
+    button.slick-arrow {
+        &:hover {
+            background: $primary-color;
+            border-color: $primary-color;
+            zoom: 1.1;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+
+            i {
+                color: #0077FF;
+                transform: scale(1.1);
+            }
+        }
     }
 
     i {
@@ -354,4 +372,56 @@
             }
         }
     }
+}
+
+.gallery {
+    background-color: $primary-color;
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.gallery_main_text {
+    padding-top: 140px;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 100px;
+        margin: 0 auto;
+        border: 1px solid $secondary-color;
+    }
+
+    h2 {
+        font-size: $font_size_5;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 30px;
+        text-transform: uppercase;
+        color: $secondary-color;
+    }
+}
+
+.main_gallery {
+    padding-top: 89px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1170px;
+}
+
+.grid_gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 9px 9px;
+    padding-bottom: 60px;
+
+    .gallery_image:first-of-type {
+        grid-area: 1/1/3/3;
+    }
+
+    .lg-thumb {
+        display: block !important;
+    }
+
 }

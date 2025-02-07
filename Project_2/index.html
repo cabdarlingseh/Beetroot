@@ -34,6 +34,17 @@
 
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+    <!-- LightGallery CSS -->
+    <link rel="stylesheet" href="./assets/light_gallery/lightgallery-bundle.min.css">
+
+
+    <!-- LightGallery JS -->
+
+    <script src="./assets/light_gallery/lightgallery.min.js"></script>
+    <script src="./assets/light_gallery/lg-zoom.min.js"></script>
+    <script src="./assets/light_gallery/lg-fullscreen.min.js"></script>
+    <script src="./assets/light_gallery/lg-thumbnail.min.js"></script>
+
     <!-- Custom Style Sheet -->
 
     <link rel="stylesheet" href="./assets/styles/main.css">
@@ -196,11 +207,53 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Gallery Section -->
+
+            <section id="gallery">
+                <div class="gallery_section">
+                    <div class="gallery_main_text">
+                        <h2>Gallery</h2>
+                    </div>
+
+                    <!-- Main Gallery -->
+
+                    <div class="main_gallery">
+                        <div id="lightgallery" class="grid_gallery">
+                            <a href="https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg"
+                                class="gallery_image" data-lg-size="1600-2400">
+                                <img alt="An image of the building" src="./assets/images/gallery_image_1.jpg" />
+                            </a>
+                            <a href="https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                class="gallery_image" data-lg-size="1024-800">
+                                <img alt="An image of the building" src="./assets/images/gallery_image_2.jpg" />
+                            </a>
+                            <a href="https://images.pexels.com/photos/30533288/pexels-photo-30533288/free-photo-of-urban-cityscape-with-2025-artwork-post-it-heart-display.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                class="gallery_image" data-lg-size="1024-800">
+                                <img alt="An image of the building" src="./assets/images/gallery_image_3.jpg" />
+                            </a>
+                            <a href="https://images.pexels.com/photos/30561331/pexels-photo-30561331/free-photo-of-modern-apartment-building-in-izmir-with-palm-trees.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                class="gallery_image" data-lg-size="1024-800">
+                                <img alt="An image of the building" src="./assets/images/gallery_image_4.jpg" />
+                            </a>
+                            <a href="https://images.pexels.com/photos/30554239/pexels-photo-30554239/free-photo-of-striking-black-and-white-high-rise-architecture-in-katar.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                class="gallery_image" data-lg-size="1024-800">
+                                <img alt="An image of the building" src="./assets/images/gallery_image_5.jpg" />
+                            </a>
+                        </div>
+
+                        <div class="see_more_button">
+                            <button>See More</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer></footer>
 
     </div>
+
 
 
     <!-- Main JavaScript Code -->
