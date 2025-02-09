@@ -2,12 +2,14 @@
 
 window.addEventListener('scroll', function () {
     let titleBar = document.querySelector('.title_bar');
-    if (window.scrollY > 50) {
-        titleBar.classList.add('scrolled');
-        titleBar.style.paddingTop = "0";
-    } else {
-        titleBar.classList.remove('scrolled');
-        titleBar.style.paddingTop = "53px";
+    if (window.innerWidth >= 900) {
+        if (window.scrollY > 50) {
+            titleBar.classList.add('scrolled');
+            titleBar.style.paddingTop = "0";
+        } else {
+            titleBar.classList.remove('scrolled');
+            titleBar.style.paddingTop = "53px";
+        }
     }
 })
 
@@ -162,3 +164,22 @@ document.addEventListener('DOMContentLoaded', () => {
         .bindPopup('Tagus River')
         .openPopup();
 })
+
+//Navbar handler
+
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const nav = document.querySelector('.header_nav');
+    const closeButton = document.querySelector('.close-button');
+    const bars = document.querySelectorAll('.bar');
+
+    hamburgerMenu.addEventListener('click', function () {
+        nav.classList.toggle('active');
+        bars.forEach(bar => bar.classList.toggle('hidden'));
+    });
+
+    closeButton.addEventListener('click', function () {
+        nav.classList.remove('active');
+        bars.forEach(bar => bar.classList.remove('hidden'));
+    });
+});

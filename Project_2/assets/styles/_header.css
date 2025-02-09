@@ -42,6 +42,17 @@ header {
     gap: 30px;
   }
 }
+@media screen and (max-width: 900px) {
+  .title_bar {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    background: linear-gradient(360deg, #55B7FF 0%, #2c4058 50%, #7E5AFF 100%);
+    padding-top: 0;
+    gap: 10px;
+    flex-direction: row;
+  }
+}
 
 .header_logo {
   max-width: 241px;
@@ -85,6 +96,21 @@ header {
   min-height: 22px;
   margin-bottom: 240px;
 }
+@media screen and (max-width: 900px) {
+  .header_body .slider_heading h2 {
+    font-size: 44px;
+    min-height: 0;
+  }
+  .header_body .slider_heading h3 {
+    font-size: 15px;
+    min-height: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header_body .slider_heading {
+    padding-top: 60px;
+  }
+}
 .header_body .slick-dots {
   position: absolute;
   top: 25%;
@@ -111,13 +137,19 @@ header {
   outline: none;
   transition: background-color 0.3s ease;
 }
+@media screen and (max-width: 900px) {
+  .header_body .slick-dots {
+    visibility: hidden;
+  }
+}
 .header_body .slick-dots button:hover,
 .header_body .slick-dots .slick-active button {
   background-color: #fff;
 }
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 900px) {
   .header_body {
-    margin-top: 270px;
+    margin-top: 0;
+    padding-top: 150px;
   }
 }
 
@@ -155,4 +187,9 @@ header {
   top: 35%;
   left: 30%;
   font-size: 15px;
+}
+@media screen and (max-width: 900px) {
+  .pointer_down {
+    top: -90px;
+  }
 }
