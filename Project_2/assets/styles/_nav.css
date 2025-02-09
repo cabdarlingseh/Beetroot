@@ -41,6 +41,11 @@ nav li:hover a::before {
   background-color: #fff;
   border-color: #fff;
 }
+@media screen and (max-width: 1220px) {
+  nav li {
+    font-size: 18px;
+  }
+}
 
 .header_icons {
   margin-left: 115px;
@@ -87,6 +92,12 @@ nav li:hover a::before {
   top: 33%;
   left: 30%;
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+@media screen and (max-width: 1220px) {
+  .header_icons {
+    margin-left: 35px;
+    margin-bottom: 10px;
+  }
 }
 
 .header_icons a:nth-child(1):hover i {

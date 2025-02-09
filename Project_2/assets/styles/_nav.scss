@@ -51,6 +51,10 @@ nav {
             background-color: $primary-color;
             border-color: $primary-color;
         }
+
+        @media screen and(max-width:1220px) {
+            font-size: $font_size_3;
+        }
     }
 }
 
@@ -103,6 +107,11 @@ nav {
         left: 30%;
         transition: transform 0.3s ease-in-out,
             color 0.3s ease-in-out;
+    }
+
+    @media screen and(max-width:1220px) {
+        margin-left: 35px;
+        margin-bottom: 10px;
     }
 }
 
