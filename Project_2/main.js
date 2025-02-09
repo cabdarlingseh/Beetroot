@@ -144,3 +144,21 @@ document.addEventListener('DOMContentLoaded', function () {
         showThumbByDefault: true
     });
 });
+
+// For the Map
+
+document.addEventListener('DOMContentLoaded', () => {
+    const map = L.map('map').setView([38.72179820242424, -9.141325392761308], 13);
+
+    L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
+        attribution: ''
+    }).addTo(map);
+
+    L.marker([38.72537536175249, -9.14979806787607]).addTo(map)
+        .bindPopup('We Are Here')
+        .openPopup();
+
+    L.marker([38.738131702468145, -9.056774936624093]).addTo(map)
+        .bindPopup('Tagus River')
+        .openPopup();
+})
