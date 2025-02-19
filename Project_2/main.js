@@ -97,13 +97,20 @@ function createCard(article) {
     image.alt = article.alt;
     container.appendChild(image);
 
+    // Create a new div for the article content
+    const articleContent = document.createElement("div");
+    articleContent.classList.add("article-content");
+
     const title = document.createElement("h2");
     title.textContent = article.title;
-    container.appendChild(title);
+    articleContent.appendChild(title);
 
     const description = document.createElement("p");
     description.textContent = article.description;
-    container.appendChild(description);
+    articleContent.appendChild(description);
+
+    // Append the article content div to the container
+    container.appendChild(articleContent);
 
     const authors = document.createElement("div");
     authors.classList.add("authors");

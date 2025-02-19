@@ -5,27 +5,30 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 100px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header_container {
   width: 100%;
-  min-height: 54px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .title_bar {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  position: fixed;
   justify-content: center;
   align-items: center;
   padding-top: 53px;
-  top: 0;
-  left: 0;
-  z-index: 1000;
   transition: all 0.3s ease-in-out;
 }
 .title_bar.scrolled {
@@ -87,13 +90,11 @@ header {
   font-weight: bold;
   font-size: 80px;
   margin-bottom: 20px;
-  min-height: 98px;
 }
 .header_body .slider_heading h3 {
   font-weight: 400;
   letter-spacing: 30%;
   font-size: 18px;
-  min-height: 22px;
   margin-bottom: 240px;
 }
 @media screen and (max-width: 900px) {
@@ -155,9 +156,6 @@ header {
 
 .pointer_down {
   margin-bottom: 50px;
-  position: relative;
-  top: -40px;
-  left: 0px;
 }
 .pointer_down a {
   text-decoration: none;
