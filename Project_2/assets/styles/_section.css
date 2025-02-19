@@ -31,6 +31,15 @@
 .projects {
   margin-top: 89px;
 }
+.projects .project_image {
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .projects .project_image {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
 .projects img {
   position: relative;
   z-index: 10;
@@ -62,9 +71,11 @@
   justify-content: space-between;
   gap: 70px;
 }
-.project_1 .project_image {
-  width: 100%;
-  height: 100%;
+@media screen and (max-width: 1024px) {
+  .project_1 {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 @media screen and (max-width: 900px) {
   .project_1 {
@@ -119,6 +130,11 @@
   overflow: hidden;
   outline: none;
 }
+@media screen and (max-width: 1024px) {
+  .project_details button {
+    margin-top: 10px;
+  }
+}
 .project_details button:hover {
   background: #55B7FF;
   border-color: #55B7FF;
@@ -164,6 +180,12 @@
   font-size: 15px;
   font-style: italic;
 }
+@media screen and (max-width: 1024px) {
+  .project_details {
+    text-align: center;
+    padding-top: 30px;
+  }
+}
 @media screen and (max-width: 900px) {
   .project_details {
     padding: 0;
@@ -182,6 +204,12 @@
 @media screen and (max-width: 900px) {
   .project_2 img {
     box-shadow: -10px -10px #7E5AFF;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .project_2 {
+    flex-direction: column-reverse;
+    gap: 0;
   }
 }
 @media screen and (max-width: 900px) {
@@ -281,8 +309,18 @@
 .article .slick-next {
   right: -85px;
 }
+@media screen and (max-width: 1024px) {
+  .article .slick-next {
+    right: -35px;
+  }
+}
 .article .slick-prev {
   left: -100px;
+}
+@media screen and (max-width: 1024px) {
+  .article .slick-prev {
+    left: -35px;
+  }
 }
 .article button.slick-arrow:hover {
   background: #fff;
@@ -329,7 +367,6 @@
   font-size: 22px;
 }
 .article_details p {
-  margin-bottom: 39px;
   color: #2c4058;
   font-size: 18px;
   font-weight: 400;
@@ -529,7 +566,10 @@
   transform: scale(1.2);
 }
 
-#name {
+#name:hover,
+#name:active,
+#email:hover,
+#email:active {
   border-bottom: 1px solid #000;
 }
 

@@ -5,10 +5,10 @@ window.addEventListener('scroll', function () {
     if (window.innerWidth >= 900) {
         if (window.scrollY > 50) {
             titleBar.classList.add('scrolled');
-            titleBar.style.paddingTop = "0";
+            titleBar.style.paddingTop = "10px";
         } else {
             titleBar.classList.remove('scrolled');
-            titleBar.style.paddingTop = "53px";
+            titleBar.style.paddingTop = "45px";
         }
     }
 })
@@ -40,12 +40,12 @@ $(document).ready(function () {
         speed: 500,
         nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-chevron-right"></i></button>',
         prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-chevron-left"></i></button>',
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         responsive: [{
-            breakpoint: 900,
+            breakpoint: 1024,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: true,
